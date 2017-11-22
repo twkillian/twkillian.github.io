@@ -2,7 +2,7 @@ title: Taylor Killian
 description: > # this means to ignore newlines until "baseurl:"
   Personal research webiste for Taylor W. Killian
 permalink: ':title/'
-baseurl: "/blog" # the subpath of your site, e.g. /blog
+baseurl: # the subpath of your site, e.g. /blog
 url: "https://twkillian.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 site-twitter: "https://twitter.com/tw_killian" #if your site has a twitter account, enter it here
 
