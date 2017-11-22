@@ -9,10 +9,10 @@ site-twitter: "https://twitter.com/tw_killian" #if your site has a twitter accou
 # Author Settings
 author: Taylor W. Killian # add your name
 author-img: TKillian_Headshot.jpg # add your photo
-about-author: I am a computational scientist and Machine Learning researcher focusing sequential decision making and transfer learning. Always hungry to keep learning. # add description
+about-author: Inquisitive pragmatist. Intrigued by decision making processes. # add description
 twitter: tw_killian # add your Twitter handle
 github: twkillian # add your Github handle
-linkedin: # add your Linkedin handle
+linkedin: taylor-w-killian# add your Linkedin handle
 email: taylorkillian@g.harvard.edu # add your Email address
 
 # Disqus
