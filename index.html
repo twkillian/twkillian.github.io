@@ -14,7 +14,7 @@ layout: main
         learning, and causal inference. I have long been interested in
         decision making and the mechanisms by which humans summarize and reason about the world. In my work, I aim to develop models and algorithms that enable actors (whether human or not) to efficiently make decisions in the face of various forms of uncertainty.
       </p><p>
-    	  I have been fortunate to collaborate with multiple top research institutions, including <a href="https://www.microsoft.com/en-us/research/">Microsoft Research</a> (long standing relationship with Mehdi Fatemi), <a href='https://research.google/teams/brain/'>Google Brain</a> (2020 research intern with <a href="https://webdocs.cs.ualberta.ca/~machado/">Marlos Machado</a> and <a href="http://www.marcgbellemare.info/">Marc Bellemare</a>), <a href="https://machinelearning.apple.com/research?page=1&tag=Health">Apple Health AI</a> (2021 research intern with Leon Gatys), and <a href="https://unityhealth.to/locations/st-michaels-hospital/">St. Michael's Hospital</a>. I'm always interested in hearing about interesting problems and love collaborating with others on a variety of problems, applied and foundational, as far as there is alignment with my areas of focus. Don't hesitate to reach out!
+    	  I have been fortunate to collaborate with multiple top research institutions, including <a href="https://www.microsoft.com/en-us/research/">Microsoft Research</a> (long standing relationship with Mehdi Fatemi, 2022 research intern with <a href='https://www.mit.edu/~asolei/'>Ava Soleimany</a>), <a href='https://research.google/teams/brain/'>Google Brain</a> (2020 research intern with <a href="https://webdocs.cs.ualberta.ca/~machado/">Marlos Machado</a> and <a href="http://www.marcgbellemare.info/">Marc Bellemare</a>), <a href="https://machinelearning.apple.com/research?page=1&tag=Health">Apple Health AI</a> (2021 research intern with Leon Gatys), and <a href="https://unityhealth.to/locations/st-michaels-hospital/">St. Michael's Hospital</a>. I'm always interested in hearing about interesting problems and love collaborating with others on a variety of problems, applied and foundational, as far as there is alignment with my areas of focus. Don't hesitate to reach out!
       </p><p>
         Previously, I was employed at <a href="https://www.ll.mit.edu//">MIT Lincoln Laboratory</a> and completed degrees at <a href="https://www.harvard.edu">Harvard University</a> (working with <a href="https://finale.seas.harvard.edu">Finale Doshi-Velez</a>) and <a href="https://www.byu.edu">Brigham Young University</a> (working with <a href="https://mae.usu.edu/people/faculty/truscott-tadd">Tadd Truscott</a>).
       </p>
@@ -36,12 +36,11 @@ layout: main
           <hr>
           <p> 
             <ul class="nav nav-pills nav-stacked">
+            <li> 20 June 22 -- Starting a summer internship today with Ava Soleimany of Microsoft Research! </li>
+            <li> 25 April 22 -- Looking forward to presenting at the MIT x MassGeneralBrigham AI CURES Conference today, soliciting collaborations with clinical researchers to extend our Dead-ends work! </li>
+            <li> 18 March 22 -- Two extended abstracts accepted to RLDM, happening this coming June! </li>
             <li> 9 Dec. 21 -- MIT News wrote a nice article about our Medical Dead-ends work that was featured on <a href="https://web.mit.edu/"> MIT's Front Page</a>. The article can be found <a href="https://news.mit.edu/2021/machine-learning-treatments-1209">at this link.</a>
             <li> 28 Sept. 21 -- Our paper investigating medical dead-ends, presenting a novel analytical framework for offline RL settings was accepted for publication at this year's <a href='https://neurips.cc/Conferences/2021'>NeurIPS conference</a>! We're thrilled to have the opportunity to share this paper broadly!</li>
-            <li> 1 July 21 -- I've moved back to the Boston area to join my advisor as we start a new lab at MIT. I'm excited to get the chance to reconnect with friends and collaborators in the area! </li>
-            <!--<li> 18 Feb. 20 -- I've accepted the offer to join <a href="https://research.google/teams/brain/">Google Brain</a> as a research intern in their Montreal office for the upcoming summer!</li>-->
-            <li> 1 June 21 -- I will be working with Apple's Health AI team this summer, working to develop physiological embeddings of users with self-supervised learning. </li>
-            <li> 27 April 21 -- I successfully passed my Oral qualifying exam. I'm grateful for the feedback and recommendations from my committee. </li>
           </p>
         </div>
 
@@ -56,6 +55,21 @@ layout: main
           <p>
           	Having lived in Sweden, I put together a brief guide to acquaint co-workers and colleagues with Stockholm. You can find the guide <a href='papers/TWK_Stockholm_Guide.pdf'> here</a>
           </p>
+          <h3>2022</h3>
+          <p>
+            <strong> Counterfactually Guided Policy Transfer in Clinical Settings</strong>
+            <br>
+            Domain shift creates significant challenges for sequential decision making in healthcare since the target domain may be both data-scarce and confounded. In this paper, we propose a method for off-policy transfer by modeling the underlying generative process with a causal mechanism. We use informative priors from the source domain to augment counterfactual trajectories in the target in a principled manner. Policy learning in the target domain is further regularized via the source policy through KL-divergence. 
+            <br>
+            <strong>Taylor W. Killian</strong>, Marzyeh Ghassemi, Shalmali Joshi
+            <br>
+            <em>Conference on Health, Inference and Learning (CHIL)</em>, 2022
+            <div class="btn-group-xs">
+              <a href="/papers/KillianGhassemiJoshi_2022CHIL.pdf"
+              class="btn btn-default">Paper</a>
+              <a href="/papers/KillianGhassemiJoshi_2022CHIL_poster.pdf" class="btn btn-default">Poster</a>
+            </div>
+          </p>
           <h3>2021</h3>
           <p>
             <strong> Medical Dead-ends and Learning to Identify High-Risk States and Treatments</strong>
@@ -68,12 +82,9 @@ layout: main
             <div class="btn-group-xs">
               <a href="/papers/FatemiKillianSubramanianGhassemi_2021NeurIPS.pdf"
               class="btn btn-default">Paper</a>
-              <!--<a href="/papers/FatemiKillianSubramanianGhassemi_2021NeurIPS_poster.pdf" class="btn btn-default">Poster</a> -->
-              <!-- <a href="https://github.com/microsoft/deadends"
-              class="btn btn-default">Code</a> -->
-              <!-- <a href="/talks/hip-mdp_NIPS17oral.pdf" 
-              class="btn btn-default">Slides</a> -->
-              <!-- <a href="https://www.facebook.com/nipsfoundation/videos/1554741347950432/" class="btn btn-default">Video</a> (starts at 17:15) -->
+              <a href="/papers/FatemiKillianSubramanianGhassemi_2021NeurIPS_poster.pdf" class="btn btn-default">Poster</a>
+              <a href="https://github.com/microsoft/med-deadend"
+              class="btn btn-default">Code</a>
             </div>
           </p>
           <h3>2020</h3>
