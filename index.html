@@ -12,7 +12,7 @@ layout: main
   		</p><p>
         I work in the fields of reinforcement learning, machine learning, and causal inference. I have long been interested in decision making and the mechanisms by which humans summarize and reason about the world. In my work, I aim to develop models and algorithms that enable actors (whether human or not) to efficiently make decisions in the face of various forms of uncertainty.
       </p><p>
-    	  I have been fortunate to collaborate with multiple top research institutions, including <a href="https://www.microsoft.com/en-us/research/">Microsoft Research</a> (long standing relationship with <a href='https://www.linkedin.com/in/fatemi/'>Mehdi Fatemi</a>, 2022 research intern with <a href='https://www.mit.edu/~asolei/'>Ava Amini</a>), <a href='https://research.google/teams/brain/'>Google Brain</a> (2020 research intern with <a href="https://webdocs.cs.ualberta.ca/~machado/">Marlos Machado</a> and <a href="http://www.marcgbellemare.info/">Marc Bellemare</a>), <a href="https://machinelearning.apple.com/research?page=1&tag=Health">Apple Health AI</a> (2021 research intern with Leon Gatys), and <a href="https://unityhealth.to/locations/st-michaels-hospital/">St. Michael's Hospital</a>. I'm always keen on hearing about interesting ideas and love collaborating with others on a variety of problems, applied and foundational, as far as there is alignment with my areas of focus. Don't hesitate to reach out!
+    	  I have been fortunate to collaborate with multiple top research institutions, including <a href="https://www.microsoft.com/en-us/research/">Microsoft Research</a> (long standing relationship with <a href='https://www.linkedin.com/in/fatemi/'>Mehdi Fatemi</a>, 2022 research intern with <a href='https://www.mit.edu/~asolei/'>Ava Amini</a>), <a href='https://research.google/teams/brain/'>Google Brain</a> (2020 research intern with <a href="https://webdocs.cs.ualberta.ca/~machado/">Marlos Machado</a> and <a href="http://www.marcgbellemare.info/">Marc Bellemare</a>), <a href="https://machinelearning.apple.com/research?page=1&tag=Health">Apple Health AI</a> (2021 research intern with Leon Gatys, 2023 Research Intern with Nick Foti), and <a href="https://unityhealth.to/locations/st-michaels-hospital/">St. Michael's Hospital</a>. <strong>I'm always keen on hearing about interesting ideas and love collaborating with others on a variety of problems, applied and foundational, as far as there is alignment with my areas of focus. Don't hesitate to reach out!</strong>
       </p><p>
         Previously, I was employed at <a href="https://www.ll.mit.edu//">MIT Lincoln Laboratory</a> and completed degrees at <a href="https://www.harvard.edu">Harvard University</a> (working with <a href="https://finale.seas.harvard.edu">Finale Doshi-Velez</a>) and <a href="https://www.byu.edu">Brigham Young University</a> (working with <a href="https://mae.usu.edu/people/faculty/truscott-tadd">Tadd Truscott</a>).
       </p>
@@ -34,11 +34,12 @@ layout: main
           <hr>
           <p> 
             <ul class="nav nav-pills nav-stacked">
+            <li> 5 September 23 -- I've been invited to give two talks in the coming weeks. 13 September as part of the NYU Center for Data Science Seminar Series and 22 September for the IRL Group @ Brown University. </li>
+            <li> 1 September 23 -- Just finished my internship at Apple Health AI in Seattle, WA. I'm thrilled to be back home in Boston. </li>
             <li> 30 January 23 -- Our paper ``Risk Sensitive Dead-end Identification in Safety-Critical Offline Reinforcement Learning'' was published at TMLR, <a href='https://openreview.net/forum?id=oKlEOT83gI'>here</a>.</li>
             <li> 6 November 22 -- I've opened a <a rel="me" href="https://sigmoid.social/@tw_killian">Mastodon</a> account at sigmoid.social!
             <li> 3 November 22 -- Several workshop papers will be presented at NeurIPS this year! I'm looking forward to catching up with friends in New Orleans! </li>
             <li> 18 August 22 -- I've been invited to speak at the NeurIPS Offline RL workshop this November. I will be speaking about my recent Dead-Ends research! </li>
-            <li> 20 June 22 -- Starting a summer internship today with Ava Soleimany of Microsoft Research! </li>
           </p>
         </div>
 
@@ -55,7 +56,20 @@ layout: main
           </p>
           <h3>2023</h3>
             <p>
-            <strong>Risk Senstivie Dead-end Identification in Safety-Critical Offline Reinforcement Learning</strong>
+            <strong>Continuous Time Evidential Distributions for Irregular Time Series</strong>
+            <br>
+            We extend recent evidential deep learning approaches to sequential settings in continuous time to deal with irregularly sampled time series such as those one encounters in healthcare. This method provides stable, temporally correlated predictions and corresponding well calibrated uncertainty estimates based on the evidence gained with each collected observation. The continuous time evidential distribution enables flexible inference of the evolution of the partially observed features at any time of interest, while expanding uncertainty temporally for sparse, irregular observations.
+            <br>
+            <strong>Taylor W. Killian</strong>, Haoran Zhang, Thomas Hartvigsen, Ava Amini
+            <br>
+            <a href="https://sites.google.com/view/imlh2023/"><em>Interpretable Machine Learning in Healthcare Workshop, ICML 2023</em></a>
+          </p>
+          <div class="btn-group-xs">
+              <a href="/papers/KillianZhangHartvigsenAmini_2023IMLH.pdf" class="btn btn-default">Paper</a>
+              <a href="https://github.com/twkillian/EDICT" class="btn btn-default">Code</a>
+            </div>
+            <p>
+            <strong>Risk Sensitive Dead-end Identification in Safety-Critical Offline Reinforcement Learning</strong>
             <br>
             We improve upon our prior dead-ends work by taking a risk-senstive approach to dead-end discovery, leveraging distributional RL for value estimation. With constructed value distributions, we can account for possible worst-case outcomes through conditional value-at-risk (CVaR) which enable a more conservative evaluation of the risk of possible treatments and patient health states. This allows for earlier indication of dead-ends in a manner that is tunable based on the risk tolerance of the designed task. 
             <br>
