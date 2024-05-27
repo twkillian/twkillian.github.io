@@ -9,11 +9,11 @@ site-twitter: "https://twitter.com/tw_killian" #if your site has a twitter accou
 # Author Settings
 author: Taylor W. Killian # add your name
 author-img: TKillian_Headshot.jpg # add your photo
-about-author: Graduate researcher in ML4H at University of Toronto & Vector Institute # add description
+about-author: Postdoctoral Research Scientist # add description
 twitter: tw_killian # add your Twitter handle
 github: twkillian # add your Github handle
 googlescholar: xA3RcaUAAAAJ&hl=en #Google Scholar
-linkedin: taylor-w-killian# add your Linkedin handle
+linkedin: taylor-w-killian # add your Linkedin handle
 email: twkillian@cs.toronto.edu # add your Email address
 
 # Disqus
