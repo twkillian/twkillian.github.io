@@ -1,339 +1,334 @@
 ---
-layout: main
+layout: default
 ---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Taylor W. Killian</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🔬</text></svg>">
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="/assets/fonts/academicons-1.8.6/css/academicons.min.css">
+</head>
 <body>
-  <div class="container">
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="container">
+      <div class="navbar-brand">Taylor W. Killian</div>
+      <ul class="navbar-nav">
+        <li><a href="#about">About</a></li>
+        <li><a href="#research">Research</a></li>
+        <li><a href="#publications">Papers</a></li>
+        <li><a href="#teaching">Teaching</a></li>
+        <li><a href="#blog">Blog</a></li>
+      </ul>
+    </div>
+  </nav>
 
-      <div class="col-xs-12 col-sm-9 col-md-9">
+  <!-- Hero + About Section (Side by Side) -->
+  <section class="hero-about-section" id="about">
+    <div class="hero-about-container">
+      <!-- Left: Hero Content -->
+      <div class="hero-content">
+        <div class="hero-image">
+          <img src="/assets/img/TKillian_Headshot.jpg" alt="Taylor Killian">
+        </div>
+        <h1>Taylor W. Killian</h1>
+        <p class="title">Principal Scientist, Lila Sciences</p>
+        <p class="tagline">Reinforcement Learning | Machine Learning | Decision Making Under Uncertainty</p>
 
-        <div class="row">
-        <p>
-        I am a Senior Research Scientist at the MBZUAI, <a href="https://mbzuai.ac.ae/institute-of-foundation-models/">Institute of Foundation Models</a>, where I am co-leading research efforts into practical usage of Reinforcement Learning across a variety of impactful directions. My team focuses on both fundamental RL research as well as projects in support of our open source language model efforts via <a href="https://www.llm360.ai">LLM360</a>. We're hiring, see postings <a href="https://jobs.lever.co/ifm-us">here</a>!
-        </p><p>
-        I work in the fields of reinforcement learning, machine learning, and causal inference. I have long been interested in decision making and the mechanisms by which humans summarize and reason about the world. In my work, I aim to develop models and algorithms that enable actors (whether human or not) to efficiently make decisions in the face of various forms of uncertainty. Ultimately, my goal is to develop algorithmic techniques that extend beyond the domain in which they are trained, adapting to their end uses and any unique aspects/preferences therein. <strong>I'm always keen on hearing about interesting ideas and love collaborating with others on a variety of problems, applied and foundational, as far as there is alignment with my areas of focus. Don't hesitate to reach out!</strong>
-        </p><p>
-    	  I graduated in Spring 2024 with my PhD from the <a href="https://www.utoronto.ca">University of Toronto</a> and <a href='https://vectorinstitute.ai/'> Vector Institute</a> under <a href='http://www.marzyehghassemi.com/'>Marzyeh Ghassemi</a> Among many exciting things, I broadly investigated novel applications of Reinforcement Learning to assist clinical decision making.
-  		  </p><p>
-        During 2024 I worked as a Postdoctoral Research Scientist within Apple's Special Projects Group working on bringing Reinforcement Learning to bear in high-impact real-world use cases. 
-        </p><p>
-        Previously, I was employed at <a href="https://www.ll.mit.edu//">MIT Lincoln Laboratory</a> and completed degrees at <a href="https://www.harvard.edu">Harvard University</a> (working with <a href="https://finale.seas.harvard.edu">Finale Doshi-Velez</a>) and <a href="https://www.byu.edu">Brigham Young University</a> (working with <a href="https://mae.usu.edu/people/faculty/truscott-tadd">Tadd Truscott</a>).
-      </p>
-          <!--\\
-          <p>
-          <ul class="nav nav-pills nav-stacked">
-            <li><a href="#publications">Publications</a></li>
-
-            <li><a href="#software">Software</a></li>
-            <li><a href="blog">Blog</a></li>
-
-          </ul>
-          </p>
-      	  -->
+        <div class="hero-links">
+          <a href="mailto:twkillian@gmail.com" title="Email"><i class="fa fa-envelope"></i></a>
+          <a href="https://scholar.google.com/citations?user=xA3RcaUAAAAJ&hl=en" target="_blank" title="Google Scholar"><i class="ai ai-google-scholar"></i></a>
+          <a href="https://github.com/twkillian" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+          <a href="https://twitter.com/tw_killian" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a>
+          <a href="https://bsky.app/profile/twkillian.bsky.social" target="_blank" title="Bluesky">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 600 530" fill="currentColor" style="vertical-align: middle;">
+              <path d="M135.72 44.03c66.496 49.921 138.02 151.14 164.28 205.46 26.262-54.316 97.782-155.54 164.28-205.46 47.98-36.021 125.72-63.892 125.72 24.795 0 17.712-10.155 148.79-16.111 170.07-20.703 73.984-96.144 92.854-163.25 81.433 117.3 19.964 147.14 86.092 82.697 152.22-122.39 125.59-175.91-31.511-189.63-71.766-2.514-7.3797-3.6904-10.832-3.7077-7.8964-0.0174-2.9357-1.1937 0.51669-3.7077 7.8964-13.714 40.255-67.233 197.36-189.63 71.766-64.444-66.128-34.605-132.26 82.697-152.22-67.108 11.421-142.55-7.4491-163.25-81.433-5.9562-21.282-16.111-152.36-16.111-170.07 0-88.687 77.742-60.816 125.72-24.795z"/>
+            </svg>
+          </a>
+          <a href="https://linkedin.com/in/taylor-w-killian" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
         </div>
 
-        <div class="row">
-          <h2><a name="news"></a>News</h2>
-          <hr>
-          <p> 
-            <ul class="nav nav-pills nav-stacked">
-            <li> 17 Jul 25 -- Presented the work, at ICML, I contributed to during my postdoc at Apple! </li>
-            <li> 24 Feb 25 -- My first day at MBZUAI! I'm excited for the journey ahead and all that we'll be able to accomplish together! </li>
-            <li> 5 Aug 24 -- I'm honored to be recognized as an <a href="https://jmlr.org/tmlr/expert-reviewers.html">Expert Reviewer" for TMLR</a></li>
-	    <li> 24 May 24 -- ``Risk Sensitive Dead-end Indentification in Safety-Critical Offline Reinforcement Learning'' was accepted to be presented as part of the ``Journal-to-Conference'' track at <a href="https://rl-conference.cc/">RLC</a> this coming August!</li> 
-            <li> 16 March 24 -- I successfully defended my Dissertation today and am now officially Dr. Killian!</li>
-          </p>
+        <div>
+          <a href="/cv.pdf" class="btn" target="_blank">Download CV</a>
         </div>
-
-        <div class="row">
-          <h2><a name="publications"></a>Publications</h2>
-          <hr>
-          <h3>Preprints</h3>
-          <p>
-          Some of my work is available as
-          <a href="Marco Cusumano-Towner, David Hafner, Alex Hertzberg, Brody Huval, Aleksei Petrenko, Eugene Vinitsky, Erik Wijmans, Taylor Killian, Stuart Bowers, Ozan Sener, Philipp Krähenbühl, Vladlen Koltunhttps://arxiv.org/a/Killian_T_1.html">preprints on arXiv</a>.
-          </p>
-          <p>
-          	Having lived in Sweden, I put together a brief guide to acquaint co-workers and colleagues with Stockholm. You can find the guide <a href='papers/TWK_Stockholm_Guide.pdf'> here</a>
-          </p>
-          <h3>2025</h3>
-            <p>
-              <strong>Revisiting Reinforcement Learning for LLM Reasoning from A Cross-Domain Perspective</strong>
-              <br>
-              Reinforcement learning has emerged as a promising approach to improve large language model reasoning, yet most open efforts focus narrowly on math and code, limiting our understanding of its broader applicability to general reasoning. A key challenge lies in the lack of reliable, scalable RL reward signals across diverse reasoning domains. We introduce Guru, a curated RL reasoning corpus spanning six reasoning domains--Math, Code, Science, Logic, Simulation, and Tabular. We systematically revisit established findings in RL for LLM reasoning and observe significant variation across domains.
-              <br>
-              <em>Zhoujun Cheng, Shibo Hao, Tianyang Liu, Fan Zhou, Yutao Xie, Feng Yao, Yuexin Bian, Yonghao Zhuang, Nilabjo Dey, Yuheng Zha, Yi Gu, Kun Zhou, Yuqi Wang, Yuan Li, Richard Fan, Jianshu She, Chengqian Gao, Abulhair Saparov, Haonan Li, <strong>Taylor W. Killian</strong>, Mikhail Yurochkin, Zhengzhong Liu, Eric P. Xing, Zhiting Hu</em>
-              <br>
-              <a href="https://arxiv.org/abs/2506.14965">arXiv Preprint</a>
-            </p>
-            <div class="btn-group-xs">
-              <a href="https://guru-reasoning.github.io/">Website</a>
-              <a href="https://arxiv.org/abs/2506.14965">Paper</a>
-              <a href="https://github.com/LLM360/Reasoning360">Code</a>
-              <a href="https://huggingface.co/datasets/LLM360/guru-RL-92k">Data</a>
-              <a href="https://huggingface.co/collections/LLM360/guru-683e378108f197769265bf01">Models</a>
-            </div>
-            <p>
-              <strong>Robust Autonomy Emerges from Self-Play</strong>
-              <br>
-              We developed a robust autonomous driving agent, in simulation, via self-play at massive scale. This simulator was designed to run in extensively parallel settings where we could aggressively randomize each agent's physical and behavior characteristics and generate substantial amounts of experience. From this, incredbily strong behaviors emerged to where we saturated all open public benchmarks used to evaluted trained driving agents.
-              <br>
-              <em>Marco Cusumano-Towner, David Hafner, Alex Hertzberg, Brody Huval, Aleksei Petrenko, Eugene Vinitsky, Erik Wijmans, <strong>Taylor W. Killian</strong>, Stuart Bowers, Ozan Sener, Philipp Krahenbuhl, Vladlen Koltun</em>
-              <br>
-              <a href="https://icml.cchttps://icml.cc/virtual/2025/poster/43537">ICML 2025</a>
-            </p>
-            <div class="btn-group-xs">
-              <a href="https://arxiv.org/abs/2502.03349">Paper</a>
-            </div>
-          <h3>2024</h3>
-            <p>
-              <strong>Clinically Motivated Sequential Decision Making Under Uncertainty in Offline Settings</strong>
-              <br>
-              <strong>[PhD Thesis]</strong>--In order to develop practical machine learning aided technology for the benefit of human users, it is critical to anchor scientific research and development by the intended real-world use cases. In this thesis, I propose specific modeling decisions that can be made to develop actionable insights from sequentially observed healthcare data, facilitating the avoidance of sub-optimal decisions in patient care. I present a framework within which recorded negative outcomes can be useful to identify behaviors that should be avoided.
-              <br>
-              <em><strong>Taylor W. Killian</strong></em>
-              <br>
-              <em>University of Toronto, Department of Computer Science</em>
-            </p>
-            <div class="btn-group-xs">
-              <a href="https://utoronto.scholaris.ca/items/dba5032c-47a8-4ed2-9cb3-2cbf90d26e11">Thesis</a>
-            </div>
-          <h3>2023</h3>
-            <p>
-            <strong>Continuous Time Evidential Distributions for Irregular Time Series</strong>
-            <br>
-            We extend recent evidential deep learning approaches to sequential settings in continuous time to deal with irregularly sampled time series such as those one encounters in healthcare. This method provides stable, temporally correlated predictions and corresponding well calibrated uncertainty estimates based on the evidence gained with each collected observation. The continuous time evidential distribution enables flexible inference of the evolution of the partially observed features at any time of interest, while expanding uncertainty temporally for sparse, irregular observations.
-            <br>
-            <em><strong>Taylor W. Killian</strong>, Haoran Zhang, Thomas Hartvigsen, Ava Amini</em>
-            <br>
-            <a href="https://sites.google.com/view/imlh2023/"><em>Interpretable Machine Learning in Healthcare Workshop, ICML 2023</em></a>
-          </p>
-          <div class="btn-group-xs">
-              <a href="/papers/KillianZhangHartvigsenAmini_2023IMLH.pdf" class="btn btn-default">Paper</a>
-              <a href="https://github.com/twkillian/EDICT" class="btn btn-default">Code</a>
-            </div>
-            <p>
-            <strong>Risk Sensitive Dead-end Identification in Safety-Critical Offline Reinforcement Learning</strong>
-            <br>
-            We improve upon our prior dead-ends work by taking a risk-senstive approach to dead-end discovery, leveraging distributional RL for value estimation. With constructed value distributions, we can account for possible worst-case outcomes through conditional value-at-risk (CVaR) which enable a more conservative evaluation of the risk of possible treatments and patient health states. This allows for earlier indication of dead-ends in a manner that is tunable based on the risk tolerance of the designed task. 
-            <br>
-            <em><strong>Taylor W. Killian</strong>, Sonali Parbhoo, Marzyeh Ghassemi</em>
-            <br>
-            <a href="https://tmlr.org/"><em>Transactions on Machine Learning Research</em></a>
-          </p>
-          <div class="btn-group-xs">
-              <a href="/papers/KillianParbhooGhassemi_2023TMLR.pdf" class="btn btn-default">Paper</a>
-              <a href="https://openreview.net/forum?id=oKlEOT83gI" class="btn btn-default">Forum</a>
-              <a href="https://github.com/MLforHealth/DistDeD" class="btn btn-default">Code</a>
-            </div>
-          <h3>2022</h3>
-          <p>
-            <strong>Continuous Time Evidential Distributions for Processing Irregular Time Series</strong>
-            <br>
-            We extend recent evidential deep learning approaches to sequential settings in continuous time to deal with irregularly sampled time series such as those one encounters in healthcare. This method provides stable, temporally correlated predictions and corresponding uncertainty estimates based on the evidence gained with each collected observation. The continuous time evidential distribution enables flexible inference of the evolution of the partially observed features at any time of interest, while expanding uncertainty temporally for sparse, irregular observations.
-            <br>
-            <em><strong>Taylor W. Killian</strong>, Ava Amini</em>
-            <br>
-            <a href="https://timeseriesforhealth.github.io/"><em>Learning from Time Series for Health Workshop at NeurIPS</em></a>
-          </p>
-          <p>
-            <strong>Identifying Disparities in Sepsis Treatment using Inverse Reinforcement Learning</strong>
-            <br>
-            We estimate counterfactual optimal policies (estimated with inverse RL from recorded behavioral data) via subsets of unseen medical populations and identify the difference in care by comparing it to the learned factual policy. We do this to identify deviations across sub-populations of interest and hope this approach helps to identify disparities in care and possible sources of bias underlying them.
-            <br>
-            <em>Hyewon Jeong, <strong>Taylor W. Killian</strong>, Sanjat Kanjilal, Siddharth Nayak, Marzyeh Ghassemi</em>
-            <br>
-            <a href="https://sites.google.com/view/wiml2022/"><em>WiML: Women in Machine Learning</em></a> and <a href="https://sites.google.com/view/RL4RealLife"><em>RL4RealLife workshops at NeurIPS</em></a>
-          </p>
-          <p>
-            <strong> Counterfactually Guided Policy Transfer in Clinical Settings</strong>
-            <br>
-            Domain shift creates significant challenges for sequential decision making in healthcare since the target domain may be both data-scarce and confounded. In this paper, we propose a method for off-policy transfer by modeling the underlying generative process with a causal mechanism. We use informative priors from the source domain to augment counterfactual trajectories in the target in a principled manner. Policy learning in the target domain is further regularized via the source policy through KL-divergence. 
-            <br>
-            <em><strong>Taylor W. Killian</strong>, Marzyeh Ghassemi, Shalmali Joshi</em>
-            <br>
-            <em>Conference on Health, Inference and Learning (CHIL)</em>, 2022
-            <div class="btn-group-xs">
-              <a href="/papers/KillianGhassemiJoshi_2022CHIL.pdf" class="btn btn-default">Paper</a>
-              <a href="/papers/KillianGhassemiJoshi_2022CHIL_poster.pdf" class="btn btn-default">Poster</a>
-            </div>
-          </p>
-          <h3>2021</h3>
-          <p>
-            <strong> Medical Dead-ends and Learning to Identify High-Risk States and Treatments</strong>
-            <br>
-            In data-constrained offline settings optimal sequential decision policies may not be attainable. However, negative outcomes in data can be used to identify behaviors to avoid, thereby guarding against overoptimistic decisions in safety-critical domains that may be significantly biased due to reduced data availability. Along these lines we introduce an approach that identifies possible "dead-ends" of a state space as well as high-risk treatments that likely lead to them. We frame the discovery of these dead-ends as an RL problem, training three independent deep neural models for automated state construction, dead-end discovery and confirmation.
-            <br>
-            <em>Mehdi Fatemi, <strong>Taylor W. Killian</strong>, Jayakumar Subramanian, Marzyeh Ghassemi</em>
-            <br>
-            <em>Neural Information Processing Systems</em>, 2021
-            <div class="btn-group-xs">
-              <a href="/papers/FatemiKillianSubramanianGhassemi_2021NeurIPS.pdf"
-              class="btn btn-default">Paper</a>
-              <a href="/papers/FatemiKillianSubramanianGhassemi_2021NeurIPS_poster.pdf" class="btn btn-default">Poster</a>
-              <a href="https://github.com/microsoft/med-deadend"
-              class="btn btn-default">Code</a>
-              <a href="https://www.microsoft.com/en-us/research/blog/using-reinforcement-learning-to-identify-high-risk-states-and-treatments-in-healthcare/" class="btn btn-default">MSR Blog</a>
-            </div>
-          </p>
-          <h3>2020</h3>
-          <p>
-            <strong>An Empirical Study of Representation Learning for Reinforcement Learning in Healthcare</strong>
-            <br>
-            We investigate several information encoding approaches to develop state representations of patient health from sequential data. We evaluate these representations utility for predicting the next physiological patient observation as well as the development of treatment policies.
-            <br>
-            <em><strong>Taylor W. Killian</strong>, Haoran Zhang, Jayakumar Subramanian, Mehdi Fatemi, Maryzeh Ghassemi</em>
-            <br>
-            <a href="https://ml4health.github.io/2020/"><em>ML4H: Machine Learning for Health Workshop at NeurIPS</em></a>
-            <div class='btn-group-xs'>
-              <a href="papers/KillianZhangSubramanianFatemiGhassemi_2020ML4H.pdf" class='btn btn-default'>Paper</a>
-              <a href="papers/KillianZhangSubramanianFatemiGhassemi_2020ML4H_poster.pdf" class='btn btn-default'>Poster</a>
-              <a href="https://github.com/MLforHealth/rl_representations/" class='btn btn-default'>Code</a>
-            </div>
-          </p>
-          <p>
-          	<strong>Multiple Sclerosis Severity Classification From Clinical Text</strong>
-          	<br>
-          	We present the first publicly available transformer model trained on real clinical data other than MIMIC, specifically finetuned for the support of Multiple Sclerosis prediciton and treatment based on clincal consult notes. The model can be found <a href="https://huggingface.co/NLP4H/ms_bert">here</a>
-          	<br>
-          	<em>Alister D'Costa, Stefan Denkovski, Michal Malyska, Sae Young Moon, Brandon Rufino, Zhen Yang, <strong>Taylor W. Killian</strong>, Marzyeh Ghassemi</em>
-          	<br>
-          	<a href="https://clinical-nlp.github.io/2020/"><em>The 3rd Clinical Natural Language Processing Workshop</em></a>
-          	<div class='btn-group-xs'>
-          		<a href='/papers/MSBERT_dCostaDenkovskiMalyskaMoonRufinoYangKillianGhassemiClinicalNLP_2020.pdf' class='btn btn-default'>Paper</a>
-          	</div>
-          </p>
-
-          <p>
-          	<strong>Counterfactual Transfer via Inductive Bias in Clinical Settings</strong>
-          	<br>
-          	By using counterfactual inference, we establish an approach to transfer learning within offline, off-policy Reinforcement Learning that provides improved policy performance in data-scarce target environments.
-          	<br>
-          	<em><strong>Taylor W. Killian</strong>, Marzyeh Ghassemi, Shalmali Joshi</em>
-          	<br>
-          	<a href="https://biases-invariances-generalization.github.io/"><em>Inductive Biases, Invariances and Generalization in RL (BIG) ICML Workshop</em></a>
-          	<div class='btn-group-xs'>
-          		<a href="https://biases-invariances-generalization.github.io/pdf/big_40.pdf" class='btn btn-default'>Paper</a>
-      		</div>
-      	  </p>
-
-          <p>
-            <strong>Optimization Methods for Interpretable Differentiable Decision Trees Applied to Reinforcement Learning</strong>
-            <br>
-            We leverage a differentiable form of a decision tree for Reinforcement Learning which allows for online updates via SGD. From this decision tree, an interpretable policy is extracted. We analyze the optimization behavior of such classes of policies and demonstrate equitable or better performance over batch trained decision trees and similarly sized neural networks.
-            <br>
-            <em>Andrew Silva, <strong>Taylor W. Killian</strong>, Ivan Rodriguez Jimenez, Sung-Hyun Son, Matthew Gombolay <br></em>
-            <a href='https:aistats.org'>The 23rd International Conference on Artificial Intelligence and Statistics (AISTATS)</a>
-            <div class='btn-group-xs'>
-            	<a href='/papers/SilvaKillianJimenezSonGombolayAISTATS_2020.pdf' class='btn btn-default'>Paper</a>
-            </div>
-          </p>
-          <h3>2019</h3>
-          	<p>
-      			<strong> Kernelized Capsule Networks</strong>
-      			<br>
-      			A hybrid Gaussian Process-Deep Neural Network approach, Kernelized Capsule Networks construct a GP kernel function from the feature representations of a Capsule Network. This combination provides a model robust to adversarial perturbations while also providing a mechanism to detect perturbed inputs.
-      			<br>
-      			<em><strong>Taylor W. Killian</strong>, Justin Goodwin, Olivia Brown, Sung-Hyun Son <br></em>
-      			<a href='https://sites.google.com/view/icml2019-generalization/home'><em>1st Workshop on Understanding and Improving Generalization in Deep Learning</em></a>
-      			<div class='btn-group-xs'>
-      				<a href='/papers/KillianGoodwinBrownSon2019_ICML.pdf' class='btn btn-default'>Paper</a>
-      				<a href='/papers/KillianGoodwinBrownSon2019_ICML_poster.pdf' class='btn btn-default'>Poster</a>
-      			</div>
-      		</p>
-          <h3>2018</h3>
-	        <p>
-	          <strong>Direct Policy Transfer with Hidden Parameter Markov Decision Processes</strong>
-	          <br>
-	          An extension of the HiP-MDP framework presented in <a href="/papers/KillianDaultonKonidarisFDV2017.pdf">Killian and Daulton, et al (2017)</a> wherein the latent parameters used to describe dynamical variations are included as input to a general policy trained from the optimal policies learned from past instances.
-	          <br>
-	          <em>Jiayu Yao, <strong>Taylor W. Killian</strong>, George Konidaris, Finale Doshi-Velez</em><br>
-	          <a href="https://sites.google.com/view/llarla2018/home?authuser=0"><em>Lifelong Learning: A Reinforcement Learning Approach Workshop at FAIM 2018</em></a>
-	          <div class="btn-group-xs">
-	          	<a href="/papers/YaoKillianKonidarisFDV2018_ICML.pdf" class="btn btn-default">Paper</a>
-	          	<a href="/papers/YaoKillianKonidarisFDV2018_ICML_poster.pdf" class="btn btn-default">Poster</a>
-	          	<a href="/papers/YaoKillianKonidarisFDV2018_ICML_oral.pdf" class="btn btn-default">Slides</a>
-	          </div>
-          	</p>
-
-          <h3>2017</h3>
-          <p>
-            <strong>Robust and Efficient Transfer Learning with Hidden Parameter Markov Decision Processes</strong><br>
-            A reformulation of the <a href="https://finale.seas.harvard.edu/publications/hidden-parameter-markov-decision-processes-semiparametric-regression-approach-0">HiP-MDP</a> to admit more robust and efficient transfer learning when deployed in complex environments with highly nonlinear dynamics.
-            <br>
-            <em><strong>Taylor W. Killian</strong>, Samuel Daulton, George Konidaris, Finale Doshi-Velez</em><br>
-            <em>Neural Information Processing Systems</em>, pp. 6245-6250, 2017
-            <div class="btn-group-xs">
-              <a href="/papers/KillianDaultonKonidarisFDV2017.pdf"
-              class="btn btn-default">Paper</a>
-              <a href="/papers/KillianDaultonKonidarisFDV2017_poster.pdf" class="btn btn-default">Poster</a>
-              <a href="https://github.com/dtak/hip-mdp-public"
-              class="btn btn-default">Code</a>
-              <a href="/talks/hip-mdp_NIPS17oral.pdf"
-              class="btn btn-default">Slides</a>
-              <a href="https://www.facebook.com/nipsfoundation/videos/1554741347950432/" class="btn btn-default">Video</a> (starts at 17:15)
-            </div>
-          </p>
-          <p>
-            <strong>Robust and Efficient Transfer Learning with Hidden Parameter Markov Decision Processes</strong><br>
-            An extended abstract of some preliminary transfer learning work. Submitted to the Student Abstract track of AAAI 2017.
-            <br>
-            <strong>Taylor W. Killian</strong>, George Konidaris, Finale Doshi-Velez<br>
-            <em>AAAI</em>, pp.4949-4950. 2017
-            <div class="btn-group-xs">
-              <a href="/papers/KillianKonidarisFDV2017.pdf"
-              class="btn btn-default">Paper</a>
-              <a href="/papers/KillianKonidarisFDV2017_poster.pdf"
-              class="btn btn-default">Poster</a>
-              <a href="/talks/hip-mdp_AAAI17.pdf"
-              class="btn btn-default">Slides</a>
-            </div>
-          </p>
-          <h3>2012</h3>
-          <p>
-            <strong>Rebound and jet formation of a fluid-filled sphere</strong><br>
-            Investigation how fluid filled spheres have little to no rebound when dropped.
-            <br>
-            <em><strong>Taylor W. Killian</strong>, Robert A. Klaus, and Tadd T. Truscott</em><br>
-            <em>Physics of Fluids</em>, <strong>24</strong> 122106. 2012.
-            <div class="btn-group-xs">
-              <a href="/papers/KillianKlausTruscott2012.pdf"
-              class="btn btn-default">Paper</a>
-              <a href="/talks/2011APSDFD_FINAL.pdf"
-              class="btn btn-default">Slides</a>
-              <a href="https://www.youtube.com/watch?v=aS2kkk1THmo">Video</a>
-            </div>
-          </p>
-
-        <hr>
-      <<!--
-        <div class="row">
-          <h2><a href="blog">Blog</a></h2>
-        </div>
-      -->
-
       </div>
 
-    <hr>
+      <!-- Right: About Content -->
+      <div class="about-content">
+        <div class="bio-box">
+        <p>
+          Currently, I am a Principal Scientist at <a href="https://lila.ai">Lila Sciences</a> within the AI Research organization. We are enthusiastically focused on developing Scientific Superintelligence, bringing advanced AI into automated laboratory settings to accelerate scientific discovery, there's a lot of exciting things on the horizon!
+        </p>
+        <p>
+          I work in the fields of reinforcement learning, machine learning, and causal inference. I have long been interested in decision making and the mechanisms by which humans summarize and reason about the world. In my work, I aim to develop models and algorithms that enable actors (whether human or not) to efficiently make decisions in the face of various forms of uncertainty. Ultimately, my goal is to develop algorithmic techniques that extend beyond the domain in which they are trained, adapting to their end uses and any unique aspects/preferences therein.
+        </p>
+        <p>
+          <strong>I'm always keen on hearing about interesting ideas and love collaborating with others on a variety of problems, applied and foundational, as far as there is alignment with my areas of focus. Don't hesitate to reach out!</strong>
+        </p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <footer>
-    &nbsp;
-    </footer>
+  <!-- News Section -->
+  <section class="section" id="news">
+    <div class="container">
+      <h2 class="section-title">News</h2>
+      <ul class="news-list">
+        <li class="news-item">
+          <span class="news-date">17 Jul 25</span>
+          <span class="news-content">Presented the work, at ICML, I contributed to during my postdoc at Apple!</span>
+        </li>
+        <li class="news-item">
+          <span class="news-date">24 Feb 25</span>
+          <span class="news-content">My first day at MBZUAI! I'm excited for the journey ahead and all that we'll be able to accomplish together!</span>
+        </li>
+        <li class="news-item">
+          <span class="news-date">5 Aug 24</span>
+          <span class="news-content">I'm honored to be recognized as an <a href="https://jmlr.org/tmlr/expert-reviewers.html">Expert Reviewer for TMLR</a></span>
+        </li>
+        <li class="news-item">
+          <span class="news-date">24 May 24</span>
+          <span class="news-content">"Risk Sensitive Dead-end Identification in Safety-Critical Offline Reinforcement Learning" was accepted to be presented as part of the "Journal-to-Conference" track at <a href="https://rl-conference.cc/">RLC</a> this coming August!</span>
+        </li>
+        <li class="news-item">
+          <span class="news-date">16 Mar 24</span>
+          <span class="news-content">I successfully defended my Dissertation today and am now officially Dr. Killian!</span>
+        </li>
+      </ul>
+    </div>
+  </section>
 
-  </div>
+  <!-- Research Section -->
+  <section class="section" id="research" style="background-color: var(--secondary-bg);">
+    <div class="container">
+      <h2 class="section-title">Research</h2>
+      <p style="text-align: center; color: var(--text-light); margin-bottom: 3rem; font-size: 1.05rem;">
+        Current research projects and interests.
+      </p>
 
-  <!-- JavaScript -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
-  <script type="text/x-mathjax-config">
-    MathJax.Hub.Config({
-      tex2jax: {
-        inlineMath: [ ['$','$'] ],
-        processEscapes: true
-      }
-    });
-  </script>
-  <script type="text/javascript"
-     src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
-  </script>
-  <script type="text/javascript" src="/js/main.js"></script>
+      {% assign recent_research = site.research | sort: 'date' | reverse | limit: 3 %}
+      {% if recent_research.size > 0 %}
+      <div class="blog-grid">
+        {% for item in recent_research %}
+        <article class="blog-card">
+          <div class="blog-card-content">
+            <div class="blog-card-date">{{ item.status }}</div>
+            <h2 class="blog-card-title">
+              <a href="{{ item.url | prepend: site.baseurl }}">{{ item.title }}</a>
+            </h2>
+            <p class="blog-card-excerpt">
+              {{ item.content | strip_html | truncatewords: 30 }}
+            </p>
+            <a href="{{ item.url | prepend: site.baseurl }}" class="btn btn-outline">Learn More</a>
+          </div>
+        </article>
+        {% endfor %}
+      </div>
+      <div style="text-align: center; margin-top: 2rem;">
+        <a href="/research" class="btn">View All Research</a>
+      </div>
+      {% else %}
+      <div style="text-align: center; padding: 2rem; color: var(--text-light);">
+        <p style="font-size: 1.125rem;"><strong>Coming Soon</strong></p>
+        <p>Research interests and current projects will be highlighted here.</p>
+      </div>
+      {% endif %}
+    </div>
+  </section>
+
+  <!-- Teaching Section -->
+  <section class="section" id="teaching">
+    <div class="container">
+      <h2 class="section-title">Teaching</h2>
+      <p style="text-align: center; color: var(--text-light); margin-bottom: 3rem; font-size: 1.05rem;">
+        Courses, mentorship, and educational activities.
+      </p>
+
+      {% assign recent_teaching = site.teaching | sort: 'date' | reverse | limit: 3 %}
+      {% if recent_teaching.size > 0 %}
+      <div class="blog-grid">
+        {% for item in recent_teaching %}
+        <article class="blog-card">
+          <div class="blog-card-content">
+            <div class="blog-card-date">{{ item.status }}</div>
+            <h2 class="blog-card-title">
+              <a href="{{ item.url | prepend: site.baseurl }}">{{ item.title }}</a>
+            </h2>
+            <p class="blog-card-excerpt">
+              {{ item.content | strip_html | truncatewords: 30 }}
+            </p>
+            <a href="{{ item.url | prepend: site.baseurl }}" class="btn btn-outline">Learn More</a>
+          </div>
+        </article>
+        {% endfor %}
+      </div>
+      <div style="text-align: center; margin-top: 2rem;">
+        <a href="/teaching" class="btn">View All Teaching</a>
+      </div>
+      {% else %}
+      <div style="text-align: center; padding: 2rem; color: var(--text-light);">
+        <p style="font-size: 1.125rem;"><strong>Coming Soon</strong></p>
+        <p>Teaching experience and materials will be shared here.</p>
+      </div>
+      {% endif %}
+    </div>
+  </section>
+
+  <!-- Publications Section -->
+  <section class="section publications-section" id="publications">
+    <div class="container">
+      <h2 class="section-title">Selected Publications</h2>
+
+      <div class="year-section">
+        <h3 class="year-heading">2026</h3>
+        <div style="text-align: center; padding: 2rem; color: var(--text-light);">
+          <p style="font-size: 1.125rem;"><strong>Coming Soon</strong></p>
+          <p>New publications and preprints will appear here.</p>
+        </div>
+      </div>
+
+      <div class="year-section">
+        <h3 class="year-heading">2025</h3>
+
+        <div class="publication">
+          <div class="publication-title">Revisiting Reinforcement Learning for LLM Reasoning from A Cross-Domain Perspective</div>
+          <div class="publication-authors">
+            Zhoujun Cheng, Shibo Hao, Tianyang Liu, Fan Zhou, Yutao Xie, Feng Yao, Yuexin Bian, Yonghao Zhuang, Nilabjo Dey, Yuheng Zha, Yi Gu, Kun Zhou, Yuqi Wang, Yuan Li, Richard Fan, Jianshu She, Chengqian Gao, Abulhair Saparov, Haonan Li, <strong>Taylor W. Killian</strong>, Mikhail Yurochkin, Zhengzhong Liu, Eric P. Xing, Zhiting Hu
+          </div>
+          <div class="publication-venue">arXiv Preprint</div>
+          <div class="publication-description">
+            Reinforcement learning has emerged as a promising approach to improve large language model reasoning, yet most open efforts focus narrowly on math and code, limiting our understanding of its broader applicability to general reasoning. We introduce Guru, a curated RL reasoning corpus spanning six reasoning domains.
+          </div>
+          <div class="publication-links">
+            <a href="https://guru-reasoning.github.io/" class="pub-link">Website</a>
+            <a href="https://arxiv.org/abs/2506.14965" class="pub-link">Paper</a>
+            <a href="https://github.com/LLM360/Reasoning360" class="pub-link">Code</a>
+            <a href="https://huggingface.co/datasets/LLM360/guru-RL-92k" class="pub-link">Data</a>
+            <a href="https://huggingface.co/collections/LLM360/guru-683e378108f197769265bf01" class="pub-link">Models</a>
+          </div>
+        </div>
+
+        <div class="publication">
+          <div class="publication-title">Robust Autonomy Emerges from Self-Play</div>
+          <div class="publication-authors">
+            Marco Cusumano-Towner, David Hafner, Alex Hertzberg, Brody Huval, Aleksei Petrenko, Eugene Vinitsky, Erik Wijmans, <strong>Taylor W. Killian</strong>, Stuart Bowers, Ozan Sener, Philipp Krahenbuhl, Vladlen Koltun
+          </div>
+          <div class="publication-venue">ICML 2025</div>
+          <div class="publication-description">
+            We developed a robust autonomous driving agent, in simulation, via self-play at massive scale. This simulator was designed to run in extensively parallel settings where we could aggressively randomize each agent's physical and behavior characteristics and generate substantial amounts of experience.
+          </div>
+          <div class="publication-links">
+            <a href="https://arxiv.org/abs/2502.03349" class="pub-link">Paper</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="year-section">
+        <h3 class="year-heading">2024</h3>
+
+        <div class="publication">
+          <div class="publication-title">Clinically Motivated Sequential Decision Making Under Uncertainty in Offline Settings</div>
+          <div class="publication-authors"><strong>Taylor W. Killian</strong></div>
+          <div class="publication-venue">PhD Thesis, University of Toronto, Department of Computer Science</div>
+          <div class="publication-description">
+            In order to develop practical machine learning aided technology for the benefit of human users, it is critical to anchor scientific research and development by the intended real-world use cases. In this thesis, I propose specific modeling decisions that can be made to develop actionable insights from sequentially observed healthcare data.
+          </div>
+          <div class="publication-links">
+            <a href="https://utoronto.scholaris.ca/items/dba5032c-47a8-4ed2-9cb3-2cbf90d26e11" class="pub-link">Thesis</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="year-section">
+        <h3 class="year-heading">2023</h3>
+
+        <div class="publication">
+          <div class="publication-title">Risk Sensitive Dead-end Identification in Safety-Critical Offline Reinforcement Learning</div>
+          <div class="publication-authors"><strong>Taylor W. Killian</strong>, Sonali Parbhoo, Marzyeh Ghassemi</div>
+          <div class="publication-venue">Transactions on Machine Learning Research (TMLR)</div>
+          <div class="publication-description">
+            We improve upon our prior dead-ends work by taking a risk-sensitive approach to dead-end discovery, leveraging distributional RL for value estimation. This allows for earlier indication of dead-ends in a manner that is tunable based on the risk tolerance of the designed task.
+          </div>
+          <div class="publication-links">
+            <a href="/papers/KillianParbhooGhassemi_2023TMLR.pdf" class="pub-link">Paper</a>
+            <a href="https://openreview.net/forum?id=oKlEOT83gI" class="pub-link">Forum</a>
+            <a href="https://github.com/MLforHealth/DistDeD" class="pub-link">Code</a>
+          </div>
+        </div>
+      </div>
+
+      <div style="text-align: center; margin-top: 3rem;">
+        <a href="/publications" class="btn">View All Publications</a>
+        <a href="https://arxiv.org/a/Killian_T_1.html" class="btn btn-outline" target="_blank" style="margin-left: 1rem;">arXiv</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Blog Section -->
+  <section class="section blog-section" id="blog">
+    <div class="container">
+      <h2 class="section-title">Musings and Reflections</h2>
+      <p style="text-align: center; color: var(--text-light); margin-bottom: 3rem; font-size: 1.05rem;">
+        I'm working on sharing insights from my research and experiences in reinforcement learning, machine learning, and more.
+      </p>
+
+      {% if site.posts.size > 0 %}
+      <div class="blog-grid">
+        {% for post in site.posts limit:3 %}
+        <article class="blog-card">
+          {% if post.img %}
+          <img src="{{ site.baseurl }}/assets/img/{{ post.img }}" alt="{{ post.title }}" class="blog-card-image">
+          {% endif %}
+          <div class="blog-card-content">
+            <div class="blog-card-date">{{ post.date | date: '%B %d, %Y' }}</div>
+            <h2 class="blog-card-title">
+              <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+            </h2>
+            <p class="blog-card-excerpt">
+              {{ post.content | strip_html | truncatewords: 30 }}
+            </p>
+            <a href="{{ post.url | prepend: site.baseurl }}" class="btn btn-outline">Read More</a>
+          </div>
+        </article>
+        {% endfor %}
+      </div>
+      <div style="text-align: center; margin-top: 2rem;">
+        <a href="/blog" class="btn">View All Posts</a>
+      </div>
+      {% else %}
+      <div class="blog-placeholder">
+        <p style="font-size: 1.125rem; color: var(--text-dark);">
+          <strong>No posts yet. Check back soon!</strong>
+        </p>
+      </div>
+      {% endif %}
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-content">
+      <div class="footer-links">
+        <a href="mailto:twkillian@gmail.com" title="Email"><i class="fa fa-envelope"></i></a>
+        <a href="https://scholar.google.com/citations?user=xA3RcaUAAAAJ&hl=en" target="_blank" title="Google Scholar"><i class="ai ai-google-scholar"></i></a>
+        <a href="https://github.com/twkillian" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+        <a href="https://twitter.com/tw_killian" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a>
+        <a href="https://bsky.app/profile/twkillian.bsky.social" target="_blank" title="Bluesky">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 600 530" fill="currentColor" style="vertical-align: middle;">
+            <path d="M135.72 44.03c66.496 49.921 138.02 151.14 164.28 205.46 26.262-54.316 97.782-155.54 164.28-205.46 47.98-36.021 125.72-63.892 125.72 24.795 0 17.712-10.155 148.79-16.111 170.07-20.703 73.984-96.144 92.854-163.25 81.433 117.3 19.964 147.14 86.092 82.697 152.22-122.39 125.59-175.91-31.511-189.63-71.766-2.514-7.3797-3.6904-10.832-3.7077-7.8964-0.0174-2.9357-1.1937 0.51669-3.7077 7.8964-13.714 40.255-67.233 197.36-189.63 71.766-64.444-66.128-34.605-132.26 82.697-152.22-67.108 11.421-142.55-7.4491-163.25-81.433-5.9562-21.282-16.111-152.36-16.111-170.07 0-88.687 77.742-60.816 125.72-24.795z"/>
+          </svg>
+        </a>
+        <a href="https://linkedin.com/in/taylor-w-killian" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+      </div>
+      <div class="footer-text">
+        <p>&copy; 2026 Taylor W. Killian. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
 </body>
+</html>

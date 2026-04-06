@@ -1,4 +1,4 @@
-title: Taylor Killian
+title: Taylor W. Killian
 description: > # this means to ignore newlines until "baseurl:"
   Personal research webiste for Taylor W. Killian
 permalink: ':title/'
@@ -14,16 +14,17 @@ twitter: tw_killian # add your Twitter handle
 github: twkillian # add your Github handle
 googlescholar: xA3RcaUAAAAJ&hl=en #Google Scholar
 linkedin: taylor-w-killian # add your Linkedin handle
-email: twkillian@cs.toronto.edu # add your Email address
+email: twkillian@gmail.com # add your Email address
 
-# Disqus
-discus-identifier: mr-brown # add your discus identifier
+# Disqus (disabled)
+# discus-identifier: mr-brown # add your discus identifier
 
 # Tracker
 analytics: # Google Analytics
 
 # Build Settings
 markdown: kramdown
+future: true
 plugins_dir:
   - jekyll-sitemap
   - jekyll-paginate
@@ -31,5 +32,14 @@ plugins_dir:
 
 paginate: 8
 paginate_path: "/page/:num"
+
+# Collections
+collections:
+  research:
+    output: true
+    permalink: /research/:title/
+  teaching:
+    output: true
+    permalink: /teaching/:title/
 
 exclude: ["node_modules", "gulpfile.js", "package.json", "yarn.lock"]
