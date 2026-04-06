@@ -1,0 +1,142 @@
+---
+layout: default
+title: Research
+---
+<section class="section">
+  <div class="container">
+    <h1 style="text-align: center; margin-bottom: 1rem;">Research</h1>
+    <p style="text-align: center; color: var(--text-light); margin-bottom: 3rem;">
+      <a href="/" style="color: var(--light-blue);">&larr; Back to Home</a>
+    </p>
+
+    <p style="text-align: center; color: var(--text-light); margin-bottom: 3rem; font-size: 1.05rem;">
+      Exploring the intersection of reinforcement learning, decision making, and real-world impact.
+    </p>
+
+    <!-- Research Projects Grid -->
+    {% assign all_research = site.research | sort: 'date' | reverse %}
+    <div class="blog-grid">
+      {% for item in all_research %}
+      <article class="blog-card">
+        <div class="blog-card-content">
+          <div class="blog-card-date">{{ item.status }}</div>
+          <h2 class="blog-card-title">
+            <a href="{{ item.url | prepend: site.baseurl }}">{{ item.title }}</a>
+          </h2>
+          <p class="blog-card-excerpt">
+            {{ item.content | strip_html | truncatewords: 30 }}
+          </p>
+          <a href="{{ item.url | prepend: site.baseurl }}" class="btn btn-outline">Learn More</a>
+        </div>
+      </article>
+      {% endfor %}
+    </div>
+
+    <!-- Old Static Content Below (will be hidden if collections exist) -->
+    <div class="blog-grid" style="display: {% if all_research.size > 0 %}none{% else %}grid{% endif %}">
+      <!-- Draft Project 1 -->
+      <article class="blog-card">
+        <div class="blog-card-content">
+          <div class="blog-card-date">Ongoing</div>
+          <h2 class="blog-card-title">
+            Reinforcement Learning for Foundation Models
+          </h2>
+          <p class="blog-card-excerpt">
+            Leading research efforts at MBZUAI's Institute of Foundation Models to develop practical RL techniques for improving language model reasoning and alignment. Our work spans multiple reasoning domains through the LLM360 initiative.
+          </p>
+          <div style="margin-top: 1rem;">
+            <span style="display: inline-block; margin: 0.25rem; padding: 0.4rem 0.8rem; background-color: var(--secondary-bg); color: var(--navy); border-radius: 4px; font-size: 0.9rem;">RL for LLMs</span>
+            <span style="display: inline-block; margin: 0.25rem; padding: 0.4rem 0.8rem; background-color: var(--secondary-bg); color: var(--navy); border-radius: 4px; font-size: 0.9rem;">Foundation Models</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Draft Project 2 -->
+      <article class="blog-card">
+        <div class="blog-card-content">
+          <div class="blog-card-date">2023-2024</div>
+          <h2 class="blog-card-title">
+            Safety-Critical Offline Reinforcement Learning
+          </h2>
+          <p class="blog-card-excerpt">
+            Developing risk-sensitive methods for identifying dangerous states and treatments in healthcare settings. Focus on dead-end identification using distributional RL and conservative value estimation for improved patient safety.
+          </p>
+          <div style="margin-top: 1rem;">
+            <span style="display: inline-block; margin: 0.25rem; padding: 0.4rem 0.8rem; background-color: var(--secondary-bg); color: var(--navy); border-radius: 4px; font-size: 0.9rem;">Healthcare</span>
+            <span style="display: inline-block; margin: 0.25rem; padding: 0.4rem 0.8rem; background-color: var(--secondary-bg); color: var(--navy); border-radius: 4px; font-size: 0.9rem;">Safety</span>
+            <span style="display: inline-block; margin: 0.25rem; padding: 0.4rem 0.8rem; background-color: var(--secondary-bg); color: var(--navy); border-radius: 4px; font-size: 0.9rem;">Offline RL</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Draft Project 3 -->
+      <article class="blog-card">
+        <div class="blog-card-content">
+          <div class="blog-card-date">2024</div>
+          <h2 class="blog-card-title">
+            Robust Autonomous Systems via Self-Play
+          </h2>
+          <p class="blog-card-excerpt">
+            Developed massively scalable self-play approaches for robust autonomous driving agents during my postdoc at Apple. Achieved state-of-the-art performance through aggressive randomization and large-scale parallel simulation.
+          </p>
+          <div style="margin-top: 1rem;">
+            <span style="display: inline-block; margin: 0.25rem; padding: 0.4rem 0.8rem; background-color: var(--secondary-bg); color: var(--navy); border-radius: 4px; font-size: 0.9rem;">Autonomous Systems</span>
+            <span style="display: inline-block; margin: 0.25rem; padding: 0.4rem 0.8rem; background-color: var(--secondary-bg); color: var(--navy); border-radius: 4px; font-size: 0.9rem;">Self-Play</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Draft Project 4 -->
+      <article class="blog-card">
+        <div class="blog-card-content">
+          <div class="blog-card-date">2020-2023</div>
+          <h2 class="blog-card-title">
+            Transfer Learning in Clinical Decision Support
+          </h2>
+          <p class="blog-card-excerpt">
+            Investigating methods for transferring learned policies across different patient populations and healthcare settings. Combining causal inference with offline RL to enable safe knowledge transfer in data-scarce domains.
+          </p>
+          <div style="margin-top: 1rem;">
+            <span style="display: inline-block; margin: 0.25rem; padding: 0.4rem 0.8rem; background-color: var(--secondary-bg); color: var(--navy); border-radius: 4px; font-size: 0.9rem;">Transfer Learning</span>
+            <span style="display: inline-block; margin: 0.25rem; padding: 0.4rem 0.8rem; background-color: var(--secondary-bg); color: var(--navy); border-radius: 4px; font-size: 0.9rem;">Causal Inference</span>
+            <span style="display: inline-block; margin: 0.25rem; padding: 0.4rem 0.8rem; background-color: var(--secondary-bg); color: var(--navy); border-radius: 4px; font-size: 0.9rem;">Healthcare</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Draft Project 5 -->
+      <article class="blog-card">
+        <div class="blog-card-content">
+          <div class="blog-card-date">2022-2023</div>
+          <h2 class="blog-card-title">
+            Uncertainty Quantification for Irregular Time Series
+          </h2>
+          <p class="blog-card-excerpt">
+            Extending evidential deep learning to continuous-time settings for handling irregularly sampled medical data. Provides well-calibrated uncertainty estimates that expand temporally for sparse observations.
+          </p>
+          <div style="margin-top: 1rem;">
+            <span style="display: inline-block; margin: 0.25rem; padding: 0.4rem 0.8rem; background-color: var(--secondary-bg); color: var(--navy); border-radius: 4px; font-size: 0.9rem;">Uncertainty</span>
+            <span style="display: inline-block; margin: 0.25rem; padding: 0.4rem 0.8rem; background-color: var(--secondary-bg); color: var(--navy); border-radius: 4px; font-size: 0.9rem;">Time Series</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Draft Project 6 -->
+      <article class="blog-card">
+        <div class="blog-card-content">
+          <div class="blog-card-date">2017-2019</div>
+          <h2 class="blog-card-title">
+            Hidden Parameter MDPs for Transfer Learning
+          </h2>
+          <p class="blog-card-excerpt">
+            Developed efficient transfer learning methods using hidden parameter Markov Decision Processes. Enables robust policy learning across related tasks with varying dynamics, demonstrated in robotics and control domains.
+          </p>
+          <div style="margin-top: 1rem;">
+            <span style="display: inline-block; margin: 0.25rem; padding: 0.4rem 0.8rem; background-color: var(--secondary-bg); color: var(--navy); border-radius: 4px; font-size: 0.9rem;">Transfer Learning</span>
+            <span style="display: inline-block; margin: 0.25rem; padding: 0.4rem 0.8rem; background-color: var(--secondary-bg); color: var(--navy); border-radius: 4px; font-size: 0.9rem;">MDPs</span>
+          </div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>

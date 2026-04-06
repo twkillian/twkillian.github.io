@@ -1,0 +1,140 @@
+---
+layout: default
+title: Teaching
+---
+<section class="section">
+  <div class="container">
+    <h1 style="text-align: center; margin-bottom: 1rem;">Teaching</h1>
+    <p style="text-align: center; color: var(--text-light); margin-bottom: 3rem;">
+      <a href="/" style="color: var(--light-blue);">&larr; Back to Home</a>
+    </p>
+
+    <p style="text-align: center; color: var(--text-light); margin-bottom: 3rem; font-size: 1.05rem;">
+      Courses, mentorship, and educational materials in machine learning and reinforcement learning.
+    </p>
+
+    <!-- Teaching Activities Grid -->
+    {% assign all_teaching = site.teaching | sort: 'date' | reverse %}
+    <div class="blog-grid">
+      {% for item in all_teaching %}
+      <article class="blog-card">
+        <div class="blog-card-content">
+          <div class="blog-card-date">{{ item.status }}</div>
+          <h2 class="blog-card-title">
+            <a href="{{ item.url | prepend: site.baseurl }}">{{ item.title }}</a>
+          </h2>
+          <p class="blog-card-excerpt">
+            {{ item.content | strip_html | truncatewords: 30 }}
+          </p>
+          <a href="{{ item.url | prepend: site.baseurl }}" class="btn btn-outline">Learn More</a>
+        </div>
+      </article>
+      {% endfor %}
+    </div>
+
+    <!-- Old Static Content Below (will be hidden if collections exist) -->
+    <div class="blog-grid" style="display: {% if all_teaching.size > 0 %}none{% else %}grid{% endif %}">
+      <!-- Draft Teaching 1 -->
+      <article class="blog-card">
+        <div class="blog-card-content">
+          <div class="blog-card-date">Planned</div>
+          <h2 class="blog-card-title">
+            Advanced Topics in Reinforcement Learning
+          </h2>
+          <p class="blog-card-excerpt">
+            Graduate-level course covering modern RL techniques including offline RL, safe RL, and applications to real-world problems. Emphasis on bridging theory and practice with hands-on projects.
+          </p>
+          <div style="margin-top: 1rem;">
+            <span style="display: inline-block; margin: 0.25rem; padding: 0.4rem 0.8rem; background-color: var(--secondary-bg); color: var(--navy); border-radius: 4px; font-size: 0.9rem;">Graduate Course</span>
+            <span style="display: inline-block; margin: 0.25rem; padding: 0.4rem 0.8rem; background-color: var(--secondary-bg); color: var(--navy); border-radius: 4px; font-size: 0.9rem;">Reinforcement Learning</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Draft Teaching 2 -->
+      <article class="blog-card">
+        <div class="blog-card-content">
+          <div class="blog-card-date">Ongoing</div>
+          <h2 class="blog-card-title">
+            PhD Student Mentorship
+          </h2>
+          <p class="blog-card-excerpt">
+            Actively mentoring PhD students at MBZUAI on projects spanning RL for LLMs, safe decision-making, and practical applications of machine learning. Focus on developing both technical skills and research independence.
+          </p>
+          <div style="margin-top: 1rem;">
+            <span style="display: inline-block; margin: 0.25rem; padding: 0.4rem 0.8rem; background-color: var(--secondary-bg); color: var(--navy); border-radius: 4px; font-size: 0.9rem;">Mentorship</span>
+            <span style="display: inline-block; margin: 0.25rem; padding: 0.4rem 0.8rem; background-color: var(--secondary-bg); color: var(--navy); border-radius: 4px; font-size: 0.9rem;">PhD Advising</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Draft Teaching 3 -->
+      <article class="blog-card">
+        <div class="blog-card-content">
+          <div class="blog-card-date">2020-2024</div>
+          <h2 class="blog-card-title">
+            Guest Lectures and Tutorials
+          </h2>
+          <p class="blog-card-excerpt">
+            Delivered guest lectures on offline RL, safe decision-making in healthcare, and transfer learning at various institutions. Developed tutorials for major ML conferences on practical RL deployment.
+          </p>
+          <div style="margin-top: 1rem;">
+            <span style="display: inline-block; margin: 0.25rem; padding: 0.4rem 0.8rem; background-color: var(--secondary-bg); color: var(--navy); border-radius: 4px; font-size: 0.9rem;">Guest Lectures</span>
+            <span style="display: inline-block; margin: 0.25rem; padding: 0.4rem 0.8rem; background-color: var(--secondary-bg); color: var(--navy); border-radius: 4px; font-size: 0.9rem;">Tutorials</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Draft Teaching 4 -->
+      <article class="blog-card">
+        <div class="blog-card-content">
+          <div class="blog-card-date">2018-2023</div>
+          <h2 class="blog-card-title">
+            Machine Learning for Healthcare
+          </h2>
+          <p class="blog-card-excerpt">
+            Teaching assistant and guest lecturer for courses on machine learning applications in healthcare. Covered topics including clinical decision support, handling irregular medical data, and ethical considerations in healthcare AI.
+          </p>
+          <div style="margin-top: 1rem;">
+            <span style="display: inline-block; margin: 0.25rem; padding: 0.4rem 0.8rem; background-color: var(--secondary-bg); color: var(--navy); border-radius: 4px; font-size: 0.9rem;">Healthcare ML</span>
+            <span style="display: inline-block; margin: 0.25rem; padding: 0.4rem 0.8rem; background-color: var(--secondary-bg); color: var(--navy); border-radius: 4px; font-size: 0.9rem;">Ethics</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Draft Teaching 5 -->
+      <article class="blog-card">
+        <div class="blog-card-content">
+          <div class="blog-card-date">Planned</div>
+          <h2 class="blog-card-title">
+            Open Educational Resources
+          </h2>
+          <p class="blog-card-excerpt">
+            Developing accessible educational materials on reinforcement learning fundamentals, with focus on intuition-building and practical implementation. Materials designed for self-study and classroom use.
+          </p>
+          <div style="margin-top: 1rem;">
+            <span style="display: inline-block; margin: 0.25rem; padding: 0.4rem 0.8rem; background-color: var(--secondary-bg); color: var(--navy); border-radius: 4px; font-size: 0.9rem;">Educational Resources</span>
+            <span style="display: inline-block; margin: 0.25rem; padding: 0.4rem 0.8rem; background-color: var(--secondary-bg); color: var(--navy); border-radius: 4px; font-size: 0.9rem;">Self-Study</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Draft Teaching 6 -->
+      <article class="blog-card">
+        <div class="blog-card-content">
+          <div class="blog-card-date">2019-2023</div>
+          <h2 class="blog-card-title">
+            Undergraduate Research Mentorship
+          </h2>
+          <p class="blog-card-excerpt">
+            Mentored undergraduate students on research projects in ML and RL. Guided students through the full research process from problem formulation to publication, with several leading to conference papers.
+          </p>
+          <div style="margin-top: 1rem;">
+            <span style="display: inline-block; margin: 0.25rem; padding: 0.4rem 0.8rem; background-color: var(--secondary-bg); color: var(--navy); border-radius: 4px; font-size: 0.9rem;">Research Mentorship</span>
+            <span style="display: inline-block; margin: 0.25rem; padding: 0.4rem 0.8rem; background-color: var(--secondary-bg); color: var(--navy); border-radius: 4px; font-size: 0.9rem;">Undergraduate</span>
+          </div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>

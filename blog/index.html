@@ -1,21 +1,43 @@
 ---
 layout: default
-title: TWKs Blog
+title: Musings and Reflections
 ---
-  <h1>{{ page.title }}</h1>
-  {% for post in paginator.posts %}
-  <article class="post">
-    {% if post.img %}
-      <a class="post-thumbnail" style="background-image: url({{"/assets/img/" | prepend: site.baseurl | append : post.img}})" href="{{post.url | prepend: site.baseurl}}"></a>
-    {% else %}
-    {% endif %}
-    <div class="post-content">
-      <h2 class="post-title"><a href="{{post.url | prepend: site.baseurl}}">{{post.title}}</a></h2>
-      <p>{{ post.content | strip_html | truncatewords: 15 }}</p>
-      <span class="post-date">{{post.date | date: '%Y, %b %d'}}&nbsp;&nbsp;&nbsp;—&nbsp;</span>
-      <span class="post-words">{% capture words %}{{ post.content | number_of_words }}{% endcapture %}{% unless words contains "-" %}{{ words | plus: 250 | divided_by: 250 | append: " minute read" }}{% endunless %}</span>
-    </div>
-  </article>
-  {% endfor %}
+<section class="section blog-section">
+  <div class="container">
+    <h1 style="text-align: center; margin-bottom: 1rem;">Musings and Reflections</h1>
+    <p style="text-align: center; color: var(--text-light); margin-bottom: 3rem;">
+      <a href="/" style="color: var(--light-blue);">&larr; Back to Home</a>
+    </p>
 
-  {% include pagination.html %}
+    {% if site.posts.size > 0 %}
+    <div class="blog-grid">
+      {% for post in site.posts %}
+      <article class="blog-card">
+        {% if post.img %}
+        <img src="{{ site.baseurl }}/assets/img/{{ post.img }}" alt="{{ post.title }}" class="blog-card-image">
+        {% endif %}
+        <div class="blog-card-content">
+          <div class="blog-card-date">{{ post.date | date: '%B %d, %Y' }}</div>
+          <h2 class="blog-card-title">
+            <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+          </h2>
+          <p class="blog-card-excerpt">
+            {{ post.content | strip_html | truncatewords: 30 }}
+          </p>
+          <a href="{{ post.url | prepend: site.baseurl }}" class="btn btn-outline">Read More</a>
+        </div>
+      </article>
+      {% endfor %}
+    </div>
+    {% else %}
+    <div class="blog-placeholder">
+      <p style="font-size: 1.125rem; color: var(--text-dark);">
+        <strong>Coming Soon!</strong><br>
+        No blog posts yet. Check back soon for insights from my research and experiences.
+      </p>
+    </div>
+    {% endif %}
+
+    {% include pagination.html %}
+  </div>
+</section>
