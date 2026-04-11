@@ -24,9 +24,40 @@ title: Publications
     <!-- 2026 Publications -->
     <div class="year-section" data-year="2026">
       <h3 class="year-heading">2026</h3>
-      <div style="text-align: center; padding: 2rem; color: var(--text-light);">
+      <!-- <div style="text-align: center; padding: 2rem; color: var(--text-light);">
         <p>No publications yet for 2026.</p>
+      </div> -->
+
+      <div class="publication">
+        <div class="publication-title">IsoCompute Playbook: Optimally Scaling Sampling Compute for LLM RL</div>
+        <div class="publication-authors">
+          Zhoujun Cheng, Yutao Xie, Yuxiao Qu, Amrith Setlur, Shibo Hao, Varad Pimpalkhute, Tongtong Liang, Feng Yao, Zhengzhong Liu, Eric Xing, Virginia Smith, Ruslan Salakhutdinov, Zhiting Hu, <strong>Taylor W. Killian</strong>, Aviral Kumar
+        </div>
+        <div class="publication-venue">arXiv pre-print</div>
+        <div class="publication-description">
+          We establish scaling laws for LLM Reinforcement Learning by identifying how to optimally allocate compute across parallel rollouts, problem batch size, and update steps. It reveals that increasing parallel rollouts per problem is the primary driver of performance—improving solution quality for easy tasks and coverage for hard ones—while providing practical rules for compute-efficient post-training.
+        </div>
+        <div class="publication-links">
+          <a href="https://compute-optimal-rl-llm-scaling.github.io/" class="pub-link">Website</a>
+          <a href="https://arxiv.org/abs/2603.12151" class="pub-link">Paper</a>
+        </div>
       </div>
+
+      <div class="publication">
+        <div class="publication-title">Improving and Accelerating Offline RL in Large Discrete Action Spaces with Structured Policy Initialization</div>
+        <div class="publication-authors">
+          Matt Landers, <strong>Taylor W. Killian</strong>, Tom Hartvigsen, Afsaneh Doryab
+        </div>
+        <div class="publication-venue">ICLR 2026</div>
+        <div class="publication-description">
+          SPIN is a two-stage framework that optimizes reinforcement learning in complex combinatorial spaces by first pre-training an Action Structure Model to learn valid action patterns and then training lightweight heads for control. This approach significantly improves performance and stability, outperforming current methods by up to 39% in rewards while achieving convergence up to $12.8\times$ faster.
+        </div>
+        <div class="publication-links">
+          <a href="/papers/SPIN_LandersKillianHartvigsenDoryab_ICLR26.pdf" class="pub-link">Paper</a>
+          <a href="https://github.com/matthewlanders/SPIN" class="pub-link">Code</a>
+        </div>
+      </div>
+
     </div>
 
     <!-- 2025 Publications -->
@@ -34,11 +65,74 @@ title: Publications
       <h3 class="year-heading">2025</h3>
 
       <div class="publication">
+        <div class="publication-title">Concise Reasoning in the Lens of Lagrangian Optimization</div>
+        <div class="publication-authors">
+          Chengqian Gao, Haonan Li, <strong>Taylor W. Killian</strong>, Jianshu She, Renxi Wang, Liqun Ma, Zhoujun Cheng, Shibo Hao, Zhiqiang Xu
+        </div>
+        <div class="publication-venue">arXiv pre-print</div>
+        <div class="publication-description">
+          PALU is a pragmatic optimization strategy that streamlines LLM reasoning by treating concision as a mathematical trade-off between output length and accuracy. It successfully reduces response length by 65% while boosting performance across various domains and model scales, proving that shorter, more focused reasoning chains can actually be more effective.
+        </div>
+        <div class="publication-links">
+          <a href="https://arxiv.org/abs/2510.10168" class="pub-link">Paper</a>
+        </div>
+      </div>
+      
+      <div class="publication">
+        <div class="publication-title">K2-V2: A 360-Open, Reasoning-Enhanced LLM</div>
+        <div class="publication-authors">
+          K2 Team, Institute of Foundation Models
+        </div>
+        <div class="publication-venue">MBZUAI IFM Technical Report</div>
+        <div class="publication-description">
+          K2-V2 is a fully open-source 360-billion parameter LLM designed as a high-performance foundation for complex reasoning, knowledge retrieval, and tool use. By releasing its complete training history and data, the model provides a transparent, "reasoning-centric" base that rivals leading open-weight models like Qwen2.5-72B and approaches the performance of much larger systems.
+        </div>
+        <div class="publication-links">
+          <a href="https://ifm.ai/k2/" class="pub-link">Website</a>
+          <a href="https://www.llm360.ai/reports/K2_V2_report.pdf" class="pub-link">Paper</a>
+          <a href="https://github.com/llm360/k2v2_train" class="pub-link">Code</a>
+          <a href="https://huggingface.co/datasets/LLM360/TxT360">Data</a>
+          <a href="https://huggingface.co/collections/LLM360/k2-v2">Models</a>
+        </div>
+      </div>
+
+      <div class="publication">
+        <div class="publication-title">SAINT: Attention-Based Policies for Discrete Combinatorial Action Spaces</div>
+        <div class="publication-authors">
+          Matt Landers, <strong>Taylor W. Killian</strong>, Tom Hartvigsen, Afsaneh Doryab
+        </div>
+        <div class="publication-venue">arXiv pre-print</div>
+        <div class="publication-description">
+          SAINT is a novel policy architecture that uses Transformers to model combinatorial action spaces as unordered sets, capturing complex sub-action dependencies via self-attention. This permutation-invariant approach significantly outperforms traditional baselines in environments with up to $1.35 \times 10^{18}$ possible actions by improving sample efficiency and joint behavior modeling.
+        </div>
+        <div class="publication-links">
+          <a href="https://arxiv.org/abs/2505.12109" class="pub-link">Paper</a>
+          <a href="https://github.com/matthewlanders/SAINT" class="pub-link">Code</a>
+        </div>
+      </div>
+
+      <div class="publication">
+        <div class="publication-title">BraVE: Offline Reinforcement Learning for Discrete Combinatorial Action Spaces</div>
+        <div class="publication-authors">
+          Matt Landers, <strong>Taylor W. Killian</strong>, Hugo Barnes, Tom Hartvigsen, Afsaneh Doryab
+        </div>
+        <div class="publication-venue">NeurIPS 2025</div>
+        <div class="publication-description">
+          BraVE addresses the computational challenges of high-dimensional, discrete action spaces in offline RL by using tree-structured traversal to capture sub-action dependencies efficiently. This approach enables the evaluation of a linear number of joint actions, outperforming existing methods by up to 20x in complex environments.
+        </div>
+        <div class="publication-links">
+          <a href="https://neurips.cc/virtual/2025/loc/san-diego/poster/118272" class="pub-link">Website</a>
+          <a href="/papers/BraVE_LandersKillianBarnesHartvigsenDoryab_NeurIPS25.pdf" class="pub-link">Paper</a>
+          <a href="https://github.com/matthewlanders/BraVE" class="pub-link">Code</a>
+        </div>
+      </div>
+      
+      <div class="publication">
         <div class="publication-title">Revisiting Reinforcement Learning for LLM Reasoning from A Cross-Domain Perspective</div>
         <div class="publication-authors">
           Zhoujun Cheng, Shibo Hao, Tianyang Liu, Fan Zhou, Yutao Xie, Feng Yao, Yuexin Bian, Yonghao Zhuang, Nilabjo Dey, Yuheng Zha, Yi Gu, Kun Zhou, Yuqi Wang, Yuan Li, Richard Fan, Jianshu She, Chengqian Gao, Abulhair Saparov, Haonan Li, <strong>Taylor W. Killian</strong>, Mikhail Yurochkin, Zhengzhong Liu, Eric P. Xing, Zhiting Hu
         </div>
-        <div class="publication-venue">arXiv Preprint</div>
+        <div class="publication-venue">NeurIPS 2025</div>
         <div class="publication-description">
           Reinforcement learning has emerged as a promising approach to improve large language model reasoning, yet most open efforts focus narrowly on math and code, limiting our understanding of its broader applicability to general reasoning. We introduce Guru, a curated RL reasoning corpus spanning six reasoning domains.
         </div>
@@ -48,6 +142,23 @@ title: Publications
           <a href="https://github.com/LLM360/Reasoning360" class="pub-link">Code</a>
           <a href="https://huggingface.co/datasets/LLM360/guru-RL-92k" class="pub-link">Data</a>
           <a href="https://huggingface.co/collections/LLM360/guru-683e378108f197769265bf01" class="pub-link">Models</a>
+        </div>
+      </div>
+
+      <div class="publication">
+        <div class="publication-title">K2-Think: A Parameter-Efficient Reasoning System</div>
+        <div class="publication-authors">
+          Zhoujun Cheng, Richard Fan, Shibo Hao, <strong>Taylor W. Killian</strong>, Haonan Li, Suqi Sun, Hector Ren, Alexander Moreno, Daqian Zhang, Tianjun Zhong, Yuxin Xiong, Yuanzhe Hu, Yutao Xie, Xudong Han, Yuqi Wang, Varad Pimpalkhute, Yonghao Zhuang, Aaryamonvikram Singh, Xuezhi Liang, Anze Xie, Jianshu She, Desai Fan, Chengqian Gao, Liqun Ma, Mikhail Yurochkin, John Maggs, Xuezhe Ma, Guowei He, Zhiting Hu, Zhengzhong Liu, Eric P. Xing
+        </div>
+        <div class="publication-venue">MBZUAI IFM Technical Report</div>
+        <div class="publication-description">
+          K2-Think is a parameter-efficient 32B model that rivals much larger systems by combining long chain-of-thought training with advanced test-time computation techniques. It achieves state-of-the-art reasoning performance in math, code, and science while delivering ultra-fast inference speeds of over 2,000 tokens per second.
+        </div>
+        <div class="publication-links">
+          <a href="https://www.k2think.ai/" class="pub-link">Website</a>
+          <a href="https://arxiv.org/abs/2509.07604" class="pub-link">Paper</a>
+          <a href="https://github.com/LLM360/Reasoning360" class="pub-link">Code</a>
+          <a href="https://huggingface.co/LLM360/K2-Think" class="pub-link">Models</a>
         </div>
       </div>
 
