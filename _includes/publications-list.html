@@ -6,9 +6,6 @@
 {% endcomment %}
 
 {% for year_group in site.data.publications %}
-<div class="year-section" data-year="{{ year_group.year }}">
-  <h3 class="year-heading">{{ year_group.year }}</h3>
-
   {% assign papers_to_show = year_group.papers %}
   {% if include.featured_only %}
     {% assign papers_to_show = year_group.papers | where: "featured", true %}
@@ -18,30 +15,30 @@
     {% assign papers_to_show = papers_to_show | slice: 0, include.limit %}
   {% endif %}
 
-  {% if papers_to_show.size == 0 %}
-  <div style="text-align: center; padding: 2rem; color: var(--text-light);">
-    <p>No publications yet for {{ year_group.year }}.</p>
-  </div>
-  {% else %}
-    {% for pub in papers_to_show %}
-    <div class="publication">
-      <div class="publication-title">{{ pub.title }}</div>
-      <div class="publication-authors">{{ pub.authors }}</div>
-      <div class="publication-venue">{{ pub.venue }}</div>
-      {% if pub.description %}
-      <div class="publication-description">
-        {{ pub.description }}
-      </div>
-      {% endif %}
-      {% if pub.links %}
-      <div class="publication-links">
-        {% for link in pub.links %}
-        <a href="{{ link.url }}" class="pub-link"{% if link.url contains 'http' %} target="_blank"{% endif %}>{{ link.text }}</a>
-        {% endfor %}
-      </div>
-      {% endif %}
+  {% comment %}Only render the year section if there are papers to show{% endcomment %}
+  {% if papers_to_show.size > 0 %}
+<div class="year-section" data-year="{{ year_group.year }}">
+  <h3 class="year-heading">{{ year_group.year }}</h3>
+
+  {% for pub in papers_to_show %}
+  <div class="publication">
+    <div class="publication-title">{{ pub.title }}</div>
+    <div class="publication-authors">{{ pub.authors }}</div>
+    <div class="publication-venue">{{ pub.venue }}</div>
+    {% if pub.description %}
+    <div class="publication-description">
+      {{ pub.description }}
     </div>
-    {% endfor %}
-  {% endif %}
+    {% endif %}
+    {% if pub.links %}
+    <div class="publication-links">
+      {% for link in pub.links %}
+      <a href="{{ link.url }}" class="pub-link"{% if link.url contains 'http' %} target="_blank"{% endif %}>{{ link.text }}</a>
+      {% endfor %}
+    </div>
+    {% endif %}
+  </div>
+  {% endfor %}
 </div>
+  {% endif %}
 {% endfor %}

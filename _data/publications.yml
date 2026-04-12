@@ -31,7 +31,7 @@
       links:
         - text: "Paper"
           url: "https://arxiv.org/abs/2510.10168"
-      featured: false
+      featured: true
 
     - title: "K2-V2: A 360-Open, Reasoning-Enhanced LLM"
       authors: "K2 Team, Institute of Foundation Models"
@@ -48,7 +48,7 @@
           url: "https://huggingface.co/datasets/LLM360/TxT360"
         - text: "Models"
           url: "https://huggingface.co/collections/LLM360/k2-v2"
-      featured: true
+      featured: false
 
     - title: "SAINT: Attention-Based Policies for Discrete Combinatorial Action Spaces"
       authors: "Matt Landers, <strong>Taylor W. Killian</strong>, Tom Hartvigsen, Afsaneh Doryab"
@@ -59,7 +59,7 @@
           url: "https://arxiv.org/abs/2505.12109"
         - text: "Code"
           url: "https://github.com/matthewlanders/SAINT"
-      featured: false
+      featured: true
 
     - title: "BraVE: Offline Reinforcement Learning for Discrete Combinatorial Action Spaces"
       authors: "Matt Landers, <strong>Taylor W. Killian</strong>, Hugo Barnes, Tom Hartvigsen, Afsaneh Doryab"
@@ -113,7 +113,7 @@
       links:
         - text: "Paper"
           url: "https://arxiv.org/abs/2502.03349"
-      featured: false
+      featured: true
 
 - year: 2024
   papers:
