@@ -1,0 +1,308 @@
+- year: 2026
+  papers:
+    - title: "IsoCompute Playbook: Optimally Scaling Sampling Compute for LLM RL"
+      authors: "Zhoujun Cheng, Yutao Xie, Yuxiao Qu, Amrith Setlur, Shibo Hao, Varad Pimpalkhute, Tongtong Liang, Feng Yao, Zhengzhong Liu, Eric Xing, Virginia Smith, Ruslan Salakhutdinov, Zhiting Hu, <strong>Taylor W. Killian</strong>, Aviral Kumar"
+      venue: "arXiv pre-print"
+      description: "We establish scaling laws for LLM Reinforcement Learning by identifying how to optimally allocate compute across parallel rollouts, problem batch size, and update steps. It reveals that increasing parallel rollouts per problem is the primary driver of performance—improving solution quality for easy tasks and coverage for hard ones—while providing practical rules for compute-efficient post-training."
+      links:
+        - text: "Website"
+          url: "https://compute-optimal-rl-llm-scaling.github.io/"
+        - text: "Paper"
+          url: "https://arxiv.org/abs/2603.12151"
+      featured: true
+
+    - title: "Improving and Accelerating Offline RL in Large Discrete Action Spaces with Structured Policy Initialization"
+      authors: "Matt Landers, <strong>Taylor W. Killian</strong>, Tom Hartvigsen, Afsaneh Doryab"
+      venue: "ICLR 2026"
+      description: "SPIN is a two-stage framework that optimizes reinforcement learning in complex combinatorial spaces by first pre-training an Action Structure Model to learn valid action patterns and then training lightweight heads for control. This approach significantly improves performance and stability, outperforming current methods by up to 39% in rewards while achieving convergence up to $12.8\\times$ faster."
+      links:
+        - text: "Paper"
+          url: "/papers/SPIN_LandersKillianHartvigsenDoryab_ICLR26.pdf"
+        - text: "Code"
+          url: "https://github.com/matthewlanders/SPIN"
+      featured: true
+
+- year: 2025
+  papers:
+    - title: "Concise Reasoning in the Lens of Lagrangian Optimization"
+      authors: "Chengqian Gao, Haonan Li, <strong>Taylor W. Killian</strong>, Jianshu She, Renxi Wang, Liqun Ma, Zhoujun Cheng, Shibo Hao, Zhiqiang Xu"
+      venue: "arXiv pre-print"
+      description: "PALU is a pragmatic optimization strategy that streamlines LLM reasoning by treating concision as a mathematical trade-off between output length and accuracy. It successfully reduces response length by 65% while boosting performance across various domains and model scales, proving that shorter, more focused reasoning chains can actually be more effective."
+      links:
+        - text: "Paper"
+          url: "https://arxiv.org/abs/2510.10168"
+      featured: false
+
+    - title: "K2-V2: A 360-Open, Reasoning-Enhanced LLM"
+      authors: "K2 Team, Institute of Foundation Models"
+      venue: "MBZUAI IFM Technical Report"
+      description: "K2-V2 is a fully open-source 360-billion parameter LLM designed as a high-performance foundation for complex reasoning, knowledge retrieval, and tool use. By releasing its complete training history and data, the model provides a transparent, \"reasoning-centric\" base that rivals leading open-weight models like Qwen2.5-72B and approaches the performance of much larger systems."
+      links:
+        - text: "Website"
+          url: "https://ifm.ai/k2/"
+        - text: "Paper"
+          url: "https://www.llm360.ai/reports/K2_V2_report.pdf"
+        - text: "Code"
+          url: "https://github.com/llm360/k2v2_train"
+        - text: "Data"
+          url: "https://huggingface.co/datasets/LLM360/TxT360"
+        - text: "Models"
+          url: "https://huggingface.co/collections/LLM360/k2-v2"
+      featured: true
+
+    - title: "SAINT: Attention-Based Policies for Discrete Combinatorial Action Spaces"
+      authors: "Matt Landers, <strong>Taylor W. Killian</strong>, Tom Hartvigsen, Afsaneh Doryab"
+      venue: "arXiv pre-print"
+      description: "SAINT is a novel policy architecture that uses Transformers to model combinatorial action spaces as unordered sets, capturing complex sub-action dependencies via self-attention. This permutation-invariant approach significantly outperforms traditional baselines in environments with up to $1.35 \\times 10^{18}$ possible actions by improving sample efficiency and joint behavior modeling."
+      links:
+        - text: "Paper"
+          url: "https://arxiv.org/abs/2505.12109"
+        - text: "Code"
+          url: "https://github.com/matthewlanders/SAINT"
+      featured: false
+
+    - title: "BraVE: Offline Reinforcement Learning for Discrete Combinatorial Action Spaces"
+      authors: "Matt Landers, <strong>Taylor W. Killian</strong>, Hugo Barnes, Tom Hartvigsen, Afsaneh Doryab"
+      venue: "NeurIPS 2025"
+      description: "BraVE addresses the computational challenges of high-dimensional, discrete action spaces in offline RL by using tree-structured traversal to capture sub-action dependencies efficiently. This approach enables the evaluation of a linear number of joint actions, outperforming existing methods by up to 20x in complex environments."
+      links:
+        - text: "Website"
+          url: "https://neurips.cc/virtual/2025/loc/san-diego/poster/118272"
+        - text: "Paper"
+          url: "/papers/BraVE_LandersKillianBarnesHartvigsenDoryab_NeurIPS25.pdf"
+        - text: "Code"
+          url: "https://github.com/matthewlanders/BraVE"
+      featured: true
+
+    - title: "Revisiting Reinforcement Learning for LLM Reasoning from A Cross-Domain Perspective"
+      authors: "Zhoujun Cheng, Shibo Hao, Tianyang Liu, Fan Zhou, Yutao Xie, Feng Yao, Yuexin Bian, Yonghao Zhuang, Nilabjo Dey, Yuheng Zha, Yi Gu, Kun Zhou, Yuqi Wang, Yuan Li, Richard Fan, Jianshu She, Chengqian Gao, Abulhair Saparov, Haonan Li, <strong>Taylor W. Killian</strong>, Mikhail Yurochkin, Zhengzhong Liu, Eric P. Xing, Zhiting Hu"
+      venue: "NeurIPS 2025"
+      description: "Reinforcement learning has emerged as a promising approach to improve large language model reasoning, yet most open efforts focus narrowly on math and code, limiting our understanding of its broader applicability to general reasoning. We introduce Guru, a curated RL reasoning corpus spanning six reasoning domains."
+      links:
+        - text: "Website"
+          url: "https://guru-reasoning.github.io/"
+        - text: "Paper"
+          url: "https://arxiv.org/abs/2506.14965"
+        - text: "Code"
+          url: "https://github.com/LLM360/Reasoning360"
+        - text: "Data"
+          url: "https://huggingface.co/datasets/LLM360/guru-RL-92k"
+        - text: "Models"
+          url: "https://huggingface.co/collections/LLM360/guru-683e378108f197769265bf01"
+      featured: true
+
+    - title: "K2-Think: A Parameter-Efficient Reasoning System"
+      authors: "Zhoujun Cheng, Richard Fan, Shibo Hao, <strong>Taylor W. Killian</strong>, Haonan Li, Suqi Sun, Hector Ren, Alexander Moreno, Daqian Zhang, Tianjun Zhong, Yuxin Xiong, Yuanzhe Hu, Yutao Xie, Xudong Han, Yuqi Wang, Varad Pimpalkhute, Yonghao Zhuang, Aaryamonvikram Singh, Xuezhi Liang, Anze Xie, Jianshu She, Desai Fan, Chengqian Gao, Liqun Ma, Mikhail Yurochkin, John Maggs, Xuezhe Ma, Guowei He, Zhiting Hu, Zhengzhong Liu, Eric P. Xing"
+      venue: "MBZUAI IFM Technical Report"
+      description: "K2-Think is a parameter-efficient 32B model that rivals much larger systems by combining long chain-of-thought training with advanced test-time computation techniques. It achieves state-of-the-art reasoning performance in math, code, and science while delivering ultra-fast inference speeds of over 2,000 tokens per second."
+      links:
+        - text: "Website"
+          url: "https://www.k2think.ai/"
+        - text: "Paper"
+          url: "https://arxiv.org/abs/2509.07604"
+        - text: "Code"
+          url: "https://github.com/LLM360/Reasoning360"
+        - text: "Models"
+          url: "https://huggingface.co/LLM360/K2-Think"
+      featured: true
+
+    - title: "Robust Autonomy Emerges from Self-Play"
+      authors: "Marco Cusumano-Towner, David Hafner, Alex Hertzberg, Brody Huval, Aleksei Petrenko, Eugene Vinitsky, Erik Wijmans, <strong>Taylor W. Killian</strong>, Stuart Bowers, Ozan Sener, Philipp Krahenbuhl, Vladlen Koltun"
+      venue: "ICML 2025"
+      description: "We developed a robust autonomous driving agent, in simulation, via self-play at massive scale. This simulator was designed to run in extensively parallel settings where we could aggressively randomize each agent's physical and behavior characteristics and generate substantial amounts of experience."
+      links:
+        - text: "Paper"
+          url: "https://arxiv.org/abs/2502.03349"
+      featured: false
+
+- year: 2024
+  papers:
+    - title: "Clinically Motivated Sequential Decision Making Under Uncertainty in Offline Settings"
+      authors: "<strong>Taylor W. Killian</strong>"
+      venue: "PhD Thesis, University of Toronto, Department of Computer Science"
+      description: "In order to develop practical machine learning aided technology for the benefit of human users, it is critical to anchor scientific research and development by the intended real-world use cases. In this thesis, I propose specific modeling decisions that can be made to develop actionable insights from sequentially observed healthcare data."
+      links:
+        - text: "Thesis"
+          url: "https://utoronto.scholaris.ca/items/dba5032c-47a8-4ed2-9cb3-2cbf90d26e11"
+      featured: false
+
+- year: 2023
+  papers:
+    - title: "Continuous Time Evidential Distributions for Irregular Time Series"
+      authors: "<strong>Taylor W. Killian</strong>, Haoran Zhang, Thomas Hartvigsen, Ava Amini"
+      venue: "Interpretable Machine Learning in Healthcare Workshop, ICML 2023"
+      description: "We extend recent evidential deep learning approaches to sequential settings in continuous time to deal with irregularly sampled time series such as those one encounters in healthcare. This method provides stable, temporally correlated predictions and corresponding well calibrated uncertainty estimates based on the evidence gained with each collected observation."
+      links:
+        - text: "Paper"
+          url: "/papers/KillianZhangHartvigsenAmini_2023IMLH.pdf"
+        - text: "Code"
+          url: "https://github.com/twkillian/EDICT"
+      featured: false
+
+    - title: "Risk Sensitive Dead-end Identification in Safety-Critical Offline Reinforcement Learning"
+      authors: "<strong>Taylor W. Killian</strong>, Sonali Parbhoo, Marzyeh Ghassemi"
+      venue: "Transactions on Machine Learning Research (TMLR)"
+      description: "We improve upon our prior dead-ends work by taking a risk-sensitive approach to dead-end discovery, leveraging distributional RL for value estimation. This allows for earlier indication of dead-ends in a manner that is tunable based on the risk tolerance of the designed task."
+      links:
+        - text: "Paper"
+          url: "/papers/KillianParbhooGhassemi_2023TMLR.pdf"
+        - text: "Forum"
+          url: "https://openreview.net/forum?id=oKlEOT83gI"
+        - text: "Code"
+          url: "https://github.com/MLforHealth/DistDeD"
+      featured: false
+
+- year: 2022
+  papers:
+    - title: "Continuous Time Evidential Distributions for Processing Irregular Time Series"
+      authors: "<strong>Taylor W. Killian</strong>, Ava Amini"
+      venue: "Learning from Time Series for Health Workshop at NeurIPS"
+      links:
+        - text: "Paper"
+          url: "#"
+      featured: false
+
+    - title: "Identifying Disparities in Sepsis Treatment using Inverse Reinforcement Learning"
+      authors: "Hyewon Jeong, <strong>Taylor W. Killian</strong>, Sanjat Kanjilal, Siddharth Nayak, Marzyeh Ghassemi"
+      venue: "WiML: Women in Machine Learning and RL4RealLife workshops at NeurIPS"
+      links:
+        - text: "Paper"
+          url: "#"
+      featured: false
+
+    - title: "Counterfactually Guided Policy Transfer in Clinical Settings"
+      authors: "<strong>Taylor W. Killian</strong>, Marzyeh Ghassemi, Shalmali Joshi"
+      venue: "Conference on Health, Inference and Learning (CHIL), 2022"
+      links:
+        - text: "Paper"
+          url: "/papers/KillianGhassemiJoshi_2022CHIL.pdf"
+        - text: "Poster"
+          url: "/papers/KillianGhassemiJoshi_2022CHIL_poster.pdf"
+      featured: false
+
+- year: 2021
+  papers:
+    - title: "Medical Dead-ends and Learning to Identify High-Risk States and Treatments"
+      authors: "Mehdi Fatemi, <strong>Taylor W. Killian</strong>, Jayakumar Subramanian, Marzyeh Ghassemi"
+      venue: "Neural Information Processing Systems, 2021"
+      description: "In data-constrained offline settings optimal sequential decision policies may not be attainable. However, negative outcomes in data can be used to identify behaviors to avoid, thereby guarding against overoptimistic decisions in safety-critical domains that may be significantly biased due to reduced data availability."
+      links:
+        - text: "Paper"
+          url: "/papers/FatemiKillianSubramanianGhassemi_2021NeurIPS.pdf"
+        - text: "Poster"
+          url: "/papers/FatemiKillianSubramanianGhassemi_2021NeurIPS_poster.pdf"
+        - text: "Code"
+          url: "https://github.com/microsoft/med-deadend"
+        - text: "MSR Blog"
+          url: "https://www.microsoft.com/en-us/research/blog/using-reinforcement-learning-to-identify-high-risk-states-and-treatments-in-healthcare/"
+      featured: false
+
+- year: 2020
+  papers:
+    - title: "An Empirical Study of Representation Learning for Reinforcement Learning in Healthcare"
+      authors: "<strong>Taylor W. Killian</strong>, Haoran Zhang, Jayakumar Subramanian, Mehdi Fatemi, Maryzeh Ghassemi"
+      venue: "ML4H: Machine Learning for Health Workshop at NeurIPS"
+      links:
+        - text: "Paper"
+          url: "papers/KillianZhangSubramanianFatemiGhassemi_2020ML4H.pdf"
+        - text: "Poster"
+          url: "papers/KillianZhangSubramanianFatemiGhassemi_2020ML4H_poster.pdf"
+        - text: "Code"
+          url: "https://github.com/MLforHealth/rl_representations/"
+      featured: false
+
+    - title: "Multiple Sclerosis Severity Classification From Clinical Text"
+      authors: "Alister D'Costa, Stefan Denkovski, Michal Malyska, Sae Young Moon, Brandon Rufino, Zhen Yang, <strong>Taylor W. Killian</strong>, Marzyeh Ghassemi"
+      venue: "The 3rd Clinical Natural Language Processing Workshop"
+      links:
+        - text: "Paper"
+          url: "/papers/MSBERT_dCostaDenkovskiMalyskaMoonRufinoYangKillianGhassemiClinicalNLP_2020.pdf"
+        - text: "Model"
+          url: "https://huggingface.co/NLP4H/ms_bert"
+      featured: false
+
+    - title: "Counterfactual Transfer via Inductive Bias in Clinical Settings"
+      authors: "<strong>Taylor W. Killian</strong>, Marzyeh Ghassemi, Shalmali Joshi"
+      venue: "Inductive Biases, Invariances and Generalization in RL (BIG) ICML Workshop"
+      links:
+        - text: "Paper"
+          url: "https://biases-invariances-generalization.github.io/pdf/big_40.pdf"
+      featured: false
+
+    - title: "Optimization Methods for Interpretable Differentiable Decision Trees Applied to Reinforcement Learning"
+      authors: "Andrew Silva, <strong>Taylor W. Killian</strong>, Ivan Rodriguez Jimenez, Sung-Hyun Son, Matthew Gombolay"
+      venue: "The 23rd International Conference on Artificial Intelligence and Statistics (AISTATS)"
+      links:
+        - text: "Paper"
+          url: "/papers/SilvaKillianJimenezSonGombolayAISTATS_2020.pdf"
+      featured: false
+
+- year: 2019
+  papers:
+    - title: "Kernelized Capsule Networks"
+      authors: "<strong>Taylor W. Killian</strong>, Justin Goodwin, Olivia Brown, Sung-Hyun Son"
+      venue: "1st Workshop on Understanding and Improving Generalization in Deep Learning, ICML"
+      links:
+        - text: "Paper"
+          url: "/papers/KillianGoodwinBrownSon2019_ICML.pdf"
+        - text: "Poster"
+          url: "/papers/KillianGoodwinBrownSon2019_ICML_poster.pdf"
+      featured: false
+
+- year: 2018
+  papers:
+    - title: "Direct Policy Transfer with Hidden Parameter Markov Decision Processes"
+      authors: "Jiayu Yao, <strong>Taylor W. Killian</strong>, George Konidaris, Finale Doshi-Velez"
+      venue: "Lifelong Learning: A Reinforcement Learning Approach Workshop at FAIM 2018"
+      links:
+        - text: "Paper"
+          url: "/papers/YaoKillianKonidarisFDV2018_ICML.pdf"
+        - text: "Poster"
+          url: "/papers/YaoKillianKonidarisFDV2018_ICML_poster.pdf"
+        - text: "Slides"
+          url: "/papers/YaoKillianKonidarisFDV2018_ICML_oral.pdf"
+      featured: false
+
+- year: 2017
+  papers:
+    - title: "Robust and Efficient Transfer Learning with Hidden Parameter Markov Decision Processes"
+      authors: "<strong>Taylor W. Killian</strong>, Samuel Daulton, George Konidaris, Finale Doshi-Velez"
+      venue: "Neural Information Processing Systems, pp. 6245-6250, 2017"
+      links:
+        - text: "Paper"
+          url: "/papers/KillianDaultonKonidarisFDV2017.pdf"
+        - text: "Poster"
+          url: "/papers/KillianDaultonKonidarisFDV2017_poster.pdf"
+        - text: "Code"
+          url: "https://github.com/dtak/hip-mdp-public"
+        - text: "Slides"
+          url: "/talks/hip-mdp_NIPS17oral.pdf"
+        - text: "Video"
+          url: "https://www.facebook.com/nipsfoundation/videos/1554741347950432/"
+      featured: false
+
+    - title: "Robust and Efficient Transfer Learning with Hidden Parameter Markov Decision Processes"
+      authors: "<strong>Taylor W. Killian</strong>, George Konidaris, Finale Doshi-Velez"
+      venue: "AAAI, pp.4949-4950. 2017"
+      links:
+        - text: "Paper"
+          url: "/papers/KillianKonidarisFDV2017.pdf"
+        - text: "Poster"
+          url: "/papers/KillianKonidarisFDV2017_poster.pdf"
+        - text: "Slides"
+          url: "/talks/hip-mdp_AAAI17.pdf"
+      featured: false
+
+- year: 2012
+  papers:
+    - title: "Rebound and jet formation of a fluid-filled sphere"
+      authors: "<strong>Taylor W. Killian</strong>, Robert A. Klaus, and Tadd T. Truscott"
+      venue: "Physics of Fluids, 24 122106. 2012."
+      links:
+        - text: "Paper"
+          url: "/papers/KillianKlausTruscott2012.pdf"
+        - text: "Slides"
+          url: "/talks/2011APSDFD_FINAL.pdf"
+        - text: "Video"
+          url: "https://www.youtube.com/watch?v=aS2kkk1THmo"
+      featured: false
