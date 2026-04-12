@@ -31,7 +31,7 @@
       links:
         - text: "Paper"
           url: "https://arxiv.org/abs/2510.10168"
-      featured: true
+      featured: false
 
     - title: "K2-V2: A 360-Open, Reasoning-Enhanced LLM"
       authors: "K2 Team, Institute of Foundation Models"
