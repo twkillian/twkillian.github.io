@@ -12,7 +12,7 @@ date: 2026-04-14
 tags: [getting-started, hello-world, rsi]
 
 # Optional: Add an image (place in /assets/img/)
-img: ![Stylized illustration of four people writing with technical drawings and figures overhead in tought bubbles](/assets/img/recursive-improvement.jpg)
+img: recursive-improvement.jpg
 
 # Show(true) or Hide(false) from listings
 published: true
