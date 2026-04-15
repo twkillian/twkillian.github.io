@@ -13,6 +13,9 @@ tags: [reinforcement-learning, AI-ethics, real-world-AI]
 
 # Optional: Add an image (place in /assets/img/)
 # img: post-image.jpg
+
+# Hide from listings
+published: false
 ---
 
 As reinforcement learning (RL) continues to mature from a primarily theoretical discipline into one with increasingly tangible real-world applications, we find ourselves at a critical juncture. The same techniques that enable impressive capabilities—from mastering complex games to optimizing industrial processes—carry both tremendous promise and significant responsibility. Having worked across healthcare, autonomous systems, and foundation models, I've witnessed firsthand how RL can transform domains when deployed thoughtfully, and the risks that emerge when we move too quickly.
