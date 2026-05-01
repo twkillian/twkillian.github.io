@@ -1,8 +1,17 @@
 - year: 2026
   papers:
+    - title: "From Reasoning Traces to Reusable Modules: Reinforcement Learning for Compositional Generalization in Language Model Reasoning"
+      authors: "Lingjing Kong, Xin Liu, Guangyi Chen, Martin Q. Ma, Xiangchen Song, Yuekai Sun, Mikhail Yurochkin, <strong>Taylor W. Killian</strong>, Ruslan Salakhutdinov, Kun Zhang, Eric P. Xing, Zhengzhong Liu"
+      venue: "ICML 2026"
+      description: "We demonstrate that RL enables LLMs to achieve compositional generalization by extracting and recombining reusable atomic modules from reasoning traces. Our theoretical framework shows RL's exploratory nature provides the coverage needed to identify latent structure, while experiments confirm that training on compound traces yields stronger generalization than isolated modules alone."
+      links:
+        - text: "Paper"
+          url: "#"
+      featured: true
+
     - title: "IsoCompute Playbook: Optimally Scaling Sampling Compute for LLM RL"
       authors: "Zhoujun Cheng, Yutao Xie, Yuxiao Qu, Amrith Setlur, Shibo Hao, Varad Pimpalkhute, Tongtong Liang, Feng Yao, Zhengzhong Liu, Eric Xing, Virginia Smith, Ruslan Salakhutdinov, Zhiting Hu, <strong>Taylor W. Killian</strong>, Aviral Kumar"
-      venue: "arXiv pre-print"
+      venue: "ICML 2026"
       description: "We establish scaling laws for LLM Reinforcement Learning by identifying how to optimally allocate compute across parallel rollouts, problem batch size, and update steps. It reveals that increasing parallel rollouts per problem is the primary driver of performance—improving solution quality for easy tasks and coverage for hard ones—while providing practical rules for compute-efficient post-training."
       links:
         - text: "Website"
