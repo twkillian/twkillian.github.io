@@ -473,6 +473,18 @@ em {
   border-radius: 8px;
 }
 
+.post-content ul,
+.post-content ol {
+  margin-left: 2rem;
+  margin-bottom: 1.5rem;
+  padding-left: 0.5rem;
+}
+
+.post-content li {
+  margin-bottom: 0.5rem;
+  line-height: 1.8;
+}
+
 /* === Footer === */
 footer {
   background-color: var(--navy);
