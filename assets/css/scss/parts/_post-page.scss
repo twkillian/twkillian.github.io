@@ -31,6 +31,16 @@
   }
 }
 
+.post-content {
+  img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 2rem auto;
+    border-radius: 8px;
+  }
+}
+
 .page-footer {
   display: flex;
   justify-content: space-between;
