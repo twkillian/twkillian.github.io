@@ -464,6 +464,15 @@ em {
   color: var(--text-light);
 }
 
+/* === Post Content === */
+.post-content img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 2rem auto;
+  border-radius: 8px;
+}
+
 /* === Footer === */
 footer {
   background-color: var(--navy);
