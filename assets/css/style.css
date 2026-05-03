@@ -494,6 +494,12 @@ em {
   line-height: 1.8;
 }
 
+.post-content .aside {
+  font-size: 0.9rem;
+  color: var(--text-light);
+  font-style: italic;
+}
+
 /* === Footer === */
 footer {
   background-color: var(--navy);
