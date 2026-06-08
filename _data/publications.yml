@@ -1,7 +1,7 @@
 - year: 2026
   papers:
     - title: "LARK: Learnability-Grounded Trajectory Selection for Efficient Reasoning Distillation"
-      authors: "Tong Yu, Kaiqi Zhao, Chengcheng Chen, Amanda Hughes, <strong>Taylor W. Killian</strong>, Fenglong Ma, Wei Zhang, Porter Jenkins"
+      authors: "Tianrun Yu, Kaixiang Zhao, Chih-Chun Chen, Amanda Hughes, <strong>Taylor W. Killian</strong>, Fenglong Ma, Weitong Zhang, Porter Jenkins"
       venue: "arXiv pre-print"
       description: "LARK introduces a principled approach to distillation that focuses on selecting teacher-generated reasoning trajectories based on what the student can actually learn from, rather than relying on heuristics like quality or confidence. By characterizing trajectory learnability through how quickly it reduces training loss and balancing this with distributional coverage, we achieve consistent improvements in reasoning distillation across multiple models and tasks."
       links:
@@ -12,7 +12,7 @@
       featured: false
 
     - title: "Efficient Agentic Reasoning Through Self-Regulated Simulative Planning"
-      authors: "Mingchen Deng, Jiahao Hou, Luís S. Neves, Varad Pimpalkhute, <strong>Taylor W. Killian</strong>, Zhengzhong Liu, Eric P. Xing"
+      authors: "Mingkai Deng, Jinyu Hou, Lara Sá Neves, Varad Pimpalkhute, <strong>Taylor W. Killian</strong>, Zhengzhong Liu, Eric P. Xing"
       venue: "arXiv pre-print"
       description: "We present SR²AM, which decomposes AI agent decision-making into simulative reasoning (planning via world model predictions), self-regulation (deciding when to plan), and reactive execution (handling actions). By planning only when necessary rather than always relying on extended reasoning chains, our approach achieves competitive performance with much larger models while using 25.8-95.3% fewer reasoning tokens."
       links:
@@ -23,7 +23,7 @@
       featured: false
 
     - title: "Behavior Cue Reasoning: Monitorable Reasoning Improves Efficiency and Safety through Oversight"
-      authors: "Catherine Zheng Cui, <strong>Taylor W. Killian</strong>, Prithviraj Ammanabrolu"
+      authors: "Christopher Z. Cui, <strong>Taylor W. Killian</strong>, Prithviraj Ammanabrolu"
       venue: "arXiv pre-print"
       description: "We introduce Behavior Cue Reasoning, which trains LLMs to emit special token sequences before specific behaviors, making their reasoning more transparent and controllable. This approach enables weaker monitors to prune up to 50% of wasted reasoning tokens and, in safety-constrained environments, recovers safe actions from 80% of traces that would otherwise fail, boosting success rates from 46% to 96% with no performance cost."
       links:
