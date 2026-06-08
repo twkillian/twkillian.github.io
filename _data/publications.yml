@@ -1,38 +1,7 @@
 - year: 2026
   papers:
-    - title: "From Reasoning Traces to Reusable Modules: Reinforcement Learning for Compositional Generalization in Language Model Reasoning"
-      authors: "Lingjing Kong, Xin Liu, Guangyi Chen, Martin Q. Ma, Xiangchen Song, Yuekai Sun, Mikhail Yurochkin, <strong>Taylor W. Killian</strong>, Ruslan Salakhutdinov, Kun Zhang, Eric P. Xing, Zhengzhong Liu"
-      venue: "ICML 2026"
-      description: "We demonstrate that RL enables LLMs to achieve compositional generalization by extracting and recombining reusable atomic modules from reasoning traces. Our theoretical framework shows RL's exploratory nature provides the coverage needed to identify latent structure, while experiments confirm that training on compound traces yields stronger generalization than isolated modules alone."
-      links:
-        - text: "Paper"
-          url: "#"
-      featured: true
-
-    - title: "IsoCompute Playbook: Optimally Scaling Sampling Compute for LLM RL"
-      authors: "Zhoujun Cheng, Yutao Xie, Yuxiao Qu, Amrith Setlur, Shibo Hao, Varad Pimpalkhute, Tongtong Liang, Feng Yao, Zhengzhong Liu, Eric Xing, Virginia Smith, Ruslan Salakhutdinov, Zhiting Hu, <strong>Taylor W. Killian</strong>, Aviral Kumar"
-      venue: "ICML 2026"
-      description: "We establish scaling laws for LLM Reinforcement Learning by identifying how to optimally allocate compute across parallel rollouts, problem batch size, and update steps. It reveals that increasing parallel rollouts per problem is the primary driver of performance—improving solution quality for easy tasks and coverage for hard ones—while providing practical rules for compute-efficient post-training."
-      links:
-        - text: "Website"
-          url: "https://compute-optimal-rl-llm-scaling.github.io/"
-        - text: "Paper"
-          url: "https://arxiv.org/abs/2603.12151"
-      featured: true
-
-    - title: "Improving and Accelerating Offline RL in Large Discrete Action Spaces with Structured Policy Initialization"
-      authors: "Matt Landers, <strong>Taylor W. Killian</strong>, Tom Hartvigsen, Afsaneh Doryab"
-      venue: "ICLR 2026"
-      description: "SPIN is a two-stage framework that optimizes reinforcement learning in complex combinatorial spaces by first pre-training an Action Structure Model to learn valid action patterns and then training lightweight heads for control. This approach significantly improves performance and stability, outperforming current methods by up to 39% in rewards while achieving convergence up to $12.8\\times$ faster."
-      links:
-        - text: "Paper"
-          url: "/papers/SPIN_LandersKillianHartvigsenDoryab_ICLR26.pdf"
-        - text: "Code"
-          url: "https://github.com/matthewlanders/SPIN"
-      featured: true
-
     - title: "LARK: Learnability-Grounded Trajectory Selection for Efficient Reasoning Distillation"
-      authors: "Tong Yu, Kaiqi Zhao, Chengcheng Chen, Adam Hughes, <strong>Taylor W. Killian</strong>, Fenglong Ma, Wei Zhang, Paul Jenkins"
+      authors: "Tong Yu, Kaiqi Zhao, Chengcheng Chen, Amanda Hughes, <strong>Taylor W. Killian</strong>, Fenglong Ma, Wei Zhang, Porter Jenkins"
       venue: "arXiv pre-print"
       description: "LARK introduces a principled approach to distillation that focuses on selecting teacher-generated reasoning trajectories based on what the student can actually learn from, rather than relying on heuristics like quality or confidence. By characterizing trajectory learnability through how quickly it reduces training loss and balancing this with distributional coverage, we achieve consistent improvements in reasoning distillation across multiple models and tasks."
       links:
@@ -63,6 +32,37 @@
         - text: "Code"
           url: "https://github.com/christopherzc/behavior-cues"
       featured: false
+
+    - title: "From Reasoning Traces to Reusable Modules: Reinforcement Learning for Compositional Generalization in Language Model Reasoning"
+      authors: "Lingjing Kong, Xin Liu, Guangyi Chen, Martin Q. Ma, Xiangchen Song, Yuekai Sun, Mikhail Yurochkin, <strong>Taylor W. Killian</strong>, Ruslan Salakhutdinov, Kun Zhang, Eric P. Xing, Zhengzhong Liu"
+      venue: "ICML 2026"
+      description: "We demonstrate that RL enables LLMs to achieve compositional generalization by extracting and recombining reusable atomic modules from reasoning traces. Our theoretical framework shows RL's exploratory nature provides the coverage needed to identify latent structure, while experiments confirm that training on compound traces yields stronger generalization than isolated modules alone."
+      links:
+        - text: "Paper"
+          url: "#"
+      featured: true
+
+    - title: "IsoCompute Playbook: Optimally Scaling Sampling Compute for LLM RL"
+      authors: "Zhoujun Cheng, Yutao Xie, Yuxiao Qu, Amrith Setlur, Shibo Hao, Varad Pimpalkhute, Tongtong Liang, Feng Yao, Zhengzhong Liu, Eric Xing, Virginia Smith, Ruslan Salakhutdinov, Zhiting Hu, <strong>Taylor W. Killian</strong>, Aviral Kumar"
+      venue: "ICML 2026"
+      description: "We establish scaling laws for LLM Reinforcement Learning by identifying how to optimally allocate compute across parallel rollouts, problem batch size, and update steps. It reveals that increasing parallel rollouts per problem is the primary driver of performance—improving solution quality for easy tasks and coverage for hard ones—while providing practical rules for compute-efficient post-training."
+      links:
+        - text: "Website"
+          url: "https://compute-optimal-rl-llm-scaling.github.io/"
+        - text: "Paper"
+          url: "https://arxiv.org/abs/2603.12151"
+      featured: true
+
+    - title: "Improving and Accelerating Offline RL in Large Discrete Action Spaces with Structured Policy Initialization"
+      authors: "Matt Landers, <strong>Taylor W. Killian</strong>, Tom Hartvigsen, Afsaneh Doryab"
+      venue: "ICLR 2026"
+      description: "SPIN is a two-stage framework that optimizes reinforcement learning in complex combinatorial spaces by first pre-training an Action Structure Model to learn valid action patterns and then training lightweight heads for control. This approach significantly improves performance and stability, outperforming current methods by up to 39% in rewards while achieving convergence up to $12.8\\times$ faster."
+      links:
+        - text: "Paper"
+          url: "/papers/SPIN_LandersKillianHartvigsenDoryab_ICLR26.pdf"
+        - text: "Code"
+          url: "https://github.com/matthewlanders/SPIN"
+      featured: true
 
 - year: 2025
   papers:
