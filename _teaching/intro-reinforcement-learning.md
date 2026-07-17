@@ -21,7 +21,7 @@ Offered as **CS 401R at BYU in Fall 2026**, this is a problem-first introduction
 
 ## Course Description
 
-The course tracks two intertwined through-lines. The first is the **data-assumption ladder** above. The second is **dynamic programming as a recognition skill**: many problems have *recursive structure* — the best action now depends on the value of where you end up next — and learning to recognize and formulate that structure is a core objective. DP is seeded informally in Part I, formalized in Week 6, and operationalized as value/policy iteration in Week 9. Students gain hands-on experience through coding assignments and a final project, taught across ~2 lectures per week over 16 weeks with a midterm at the end of Week 7.
+The course tracks two intertwined through-lines. The first is the **data-assumption ladder** above. The second is **dynamic programming as a recognition skill**: many problems have *recursive structure* — the best action now depends on the value of where you end up next — and learning to recognize and formulate that structure is a core objective. DP is seeded informally in Part I, formalized in Week 6, and operationalized as value/policy iteration in Week 9. Students gain hands-on experience through coding assignments and a final project, taught across ~2 lectures per week over 16 weeks.
 
 ## Learning Objectives
 
@@ -47,34 +47,28 @@ The outline follows a single arc: begin with imitation, progressively relax the 
 
 **Week 1: Framing + Mathematical Foundations Through the Lens of SFT**
 
-  - Course philosophy — problem-first vs. formalism-first RL
-  - The arc as a ladder of increasingly weak data assumptions
-  - *DP seed:* some problems have recursive structure — recognizing it is a skill we build all term
-  - Linear algebra / probability / optimization review, framed around supervised fine-tuning (gradients, chain rule, SGD, likelihood and expectation)
+  - Course philosophy — problem-first vs. formalism-first RL; the arc as a ladder of increasingly weak data assumptions
+  - Math review (linear algebra, probability, optimization) framed around supervised fine-tuning
 
 <br>
 
 **Week 2: Supervised Fine-Tuning as the Base Case**
 
-  - Maximum likelihood estimation with ground-truth positives
-  - Behavior cloning as MLE over expert demonstrations; policies as conditional distributions πθ(a\|s)
-  - The limits of pure cloning — distribution shift and compounding errors
-  - *DP seed:* compounding error as a sequential phenomenon — decisions now affect the situation later
+  - Maximum likelihood estimation with ground-truth positives; behavior cloning as MLE over expert demonstrations
+  - The limits of pure cloning — distribution shift and compounding errors as a sequential phenomenon
 
 <br>
 
 **Week 3: Online Imitation**
 
-  - DAgger and interactive imitation — closing the loop between the policy's state distribution and expert labels
-  - The labeling bottleneck: expensive experts, and knowing only that something was *bad*
-  - Introduces the need for negative signal
+  - DAgger and interactive imitation — closing the loop between the policy's states and expert labels
+  - The labeling bottleneck motivates the need for negative signal
 
 <br>
 
 **Week 4: Learning From Negative Feedback**
 
-  - The naive fix — flipping the MLE sign on negatives — and why it's catastrophically unstable
-  - Reward as a scalar weighting of log-likelihood
+  - The naive fix — flipping the MLE sign — and why it's unstable; reward as a scalar weighting of log-likelihood
   - Deriving the REINFORCE estimator informally; the score-function / log-derivative trick
 
 <br>
@@ -82,9 +76,8 @@ The outline follows a single arc: begin with imitation, progressively relax the 
 **Week 5: Policy Gradients From Your Own Behavior**
 
   - REINFORCE in full — sampling your own trajectories, variance, and baselines
-  - GRPO as a practical, group-relative baseline used in modern LLM fine-tuning
-  - The credit assignment problem stated plainly
-  - *DP seed (highest-leverage):* decomposing return recursively — the value of a state is the reward now plus the value of what comes next (no formalism yet)
+  - GRPO as a practical, group-relative baseline in modern LLM fine-tuning
+  - The credit assignment problem, and decomposing return recursively (value now = reward now + value of what comes next)
 
 ### Part II: When Trajectories Are Incomplete or Stale (Weeks 6-10)
 
@@ -92,9 +85,7 @@ The outline follows a single arc: begin with imitation, progressively relax the 
 
 **Week 6: The MDP Formalism (Now Motivated)**
 
-  - States, actions, transitions, rewards, discounting, the Markov property
-  - Return and value functions Vπ, Qπ
-  - *Recognition-and-formulation exercise:* formulate a classical, a robotics, and an LLM problem as MDPs and judge their recursive structure
+  - States, actions, transitions, rewards, discounting, the Markov property; return and value functions Vπ, Qπ
   - Finite vs. infinite horizon; the Bellman expectation equations as a consequence of recursive return
 
 <br>
@@ -102,24 +93,20 @@ The outline follows a single arc: begin with imitation, progressively relax the 
 **Week 7: On-Policy Value Learning**
 
   - Partial rollouts and bootstrapping; Monte Carlo vs. Temporal Difference; the bias-variance tradeoff
-  - SARSA and on-policy TD control
-  - Using a learned value function as a baseline / critic for the policy gradient
-  - **Midterm** at end of week (covers Parts I-II through on-policy methods)
+  - SARSA and on-policy TD control; using a learned value function as a baseline / critic for the policy gradient
 
 <br>
 
 **Week 8: Off-Policy Data and Q-Learning**
 
   - The problem of "old" or others' trajectories; on-policy vs. off-policy made concrete
-  - Q-learning as off-policy TD control; the max operator and the Bellman optimality equation
-  - Importance sampling as the alternative correction and its variance pitfalls
+  - Q-learning as off-policy TD control; the Bellman optimality equation; importance sampling and its variance pitfalls
 
 <br>
 
 **Week 9: The Formal Core — Value & Policy Iteration**
 
-  - Value iteration and policy iteration; contraction mappings and the Bellman operator
-  - Convergence in the tabular case — the DP payoff
+  - Value iteration and policy iteration; contraction mappings, the Bellman operator, and tabular convergence
   - Stochastic approximation of a fixed point — why TD/Q-learning converge (Robbins-Monro conditions)
 
 <br>
@@ -127,8 +114,7 @@ The outline follows a single arc: begin with imitation, progressively relax the 
 **Week 10: Function Approximation**
 
   - Approximation architectures (linear features → neural networks); why tabular guarantees break
-  - The deadly triad (bootstrapping + off-policy + approximation)
-  - DQN and its stabilizing tricks (target networks, replay buffers) as engineering responses to the deadly triad
+  - The deadly triad; DQN and its stabilizing tricks (target networks, replay buffers) as responses to it
 
 ### Part III: Unifying Theory & Structure (Weeks 11-12)
 
@@ -137,15 +123,14 @@ The outline follows a single arc: begin with imitation, progressively relax the 
 **Week 11: Actor-Critic and the Policy Gradient Theorem**
 
   - The formal policy gradient theorem — deriving rigorously what REINFORCE approximated
-  - Advantage functions, A2C, and the deterministic policy gradient theorem (DDPG-style)
-  - Trust regions and clipping (PPO); the method-selection decision tree — given your data, which method is warranted?
+  - Advantage functions, A2C, DDPG-style deterministic policy gradients; trust regions and clipping (PPO)
+  - The method-selection decision tree — given your data, which method is warranted?
 
 <br>
 
 **Week 12: Partial Observability, Models, and Synthesis**
 
-  - POMDPs and belief states; connections to sequence models and context in LLMs
-  - Model-based RL introduced briefly as the remaining branch
+  - POMDPs and belief states; connections to sequence models and context in LLMs; model-based RL as the remaining branch
   - Case study — modern LLM post-training (SFT → reward modeling → RLHF/GRPO) as one traversal of the whole ladder
 
 ### Part IV: Guest Lectures & Projects (Weeks 13-16)
