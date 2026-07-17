@@ -9,7 +9,7 @@ title: "Introduction to Reinforcement Learning"
 date: 2026-03-01
 
 # Status: Display text like "Ongoing", "Planned", "2020-2023", etc.
-status: "Planned"
+status: "Offered Fall 2026"
 
 # Tags: List of tags to categorize the teaching activity
 tags: [Undergraduate Course, Reinforcement Learning, Introductory]
@@ -17,157 +17,148 @@ tags: [Undergraduate Course, Reinforcement Learning, Introductory]
 
 ## Course Overview
 
-An introductory course designed for advanced undergraduates and beginning graduate students covering the fundamentals of reinforcement learning. Students will learn core concepts, implement basic algorithms, and understand when and how to apply RL to real-world problems.
+Offered as **CS 401R at BYU in Fall 2026**, this is a problem-first introduction to reinforcement learning for advanced undergraduates and beginning graduate students. Rather than deriving RL from first principles and arriving at applications at the end, the course begins with a concrete goal — *you have a model that does something, and you want it to do better* — and progressively relaxes the assumptions you can make about your data. Each relaxation (positives only → negatives → partial rollouts → off-policy data → unobserved state) motivates the next method. Formalism is introduced when it becomes *necessary*, not before.
 
 ## Course Description
 
-This course provides a comprehensive introduction to reinforcement learning, covering both theoretical foundations and practical implementation. Students will learn how agents can learn to make sequential decisions through interaction with their environment, gaining hands-on experience through coding assignments and a final project.
+The course tracks two intertwined through-lines. The first is the **data-assumption ladder** above. The second is **dynamic programming as a recognition skill**: many problems have *recursive structure* — the best action now depends on the value of where you end up next — and learning to recognize and formulate that structure is a core objective. DP is seeded informally in Part I, formalized in Week 6, and operationalized as value/policy iteration in Week 9. Students gain hands-on experience through coding assignments and a final project, taught across ~2 lectures per week over 16 weeks with a midterm at the end of Week 7.
 
 ## Learning Objectives
 
-By the end of this course, students will be able to:
+Two overarching outcomes anchor the course. **(1) Dynamic Programming:** students will recognize and formulate problems for which dynamic programming is a solution — identifying recursive/optimal-substructure and judging when exact DP versus sampling-based approximation is warranted. **(2) Reinforcement Learning:** students will become fluent in both the mathematics of reinforcement learning theory and the use of available tools to solve simple real-world problems.
+
+In service of these, by the end of the course students will be able to:
 
 1. Understand the mathematical foundations of MDPs and RL
-2. Implement core RL algorithms from scratch
-3. Recognize appropriate use cases for RL vs. other ML approaches
-4. Debug and tune RL algorithms for different problems
-5. Critically evaluate RL research and applications
-6. Apply RL techniques to small-scale real-world problems
+2. Recognize and formulate problems with recursive/optimal-substructure, and judge when exact DP versus sampling-based approximation is warranted
+3. Implement core RL algorithms from scratch
+4. Recognize appropriate use cases for RL vs. other ML approaches
+5. Debug and tune RL algorithms for different problems
+6. Critically evaluate RL research and applications
+7. Apply RL techniques to small-scale real-world problems
 
 ## Tentative Course Outline
 
-### Part I: Foundations (Weeks 1-4)
+The outline follows a single arc: begin with imitation, progressively relax the assumptions you can make about your data, and let each relaxation motivate the next method. A dynamic-programming through-line — recognizing recursive structure — is seeded informally in Part I, formalized in Week 6, and operationalized in Week 9.
+
+### Part I: From Imitation to Self-Improvement (Weeks 1-5)
 
 <br>
 
-**Week 1: Introduction to RL**
+**Week 1: Framing + Mathematical Foundations Through the Lens of SFT**
 
-  - What is reinforcement learning?
-  - Comparison with supervised and unsupervised learning
-  - Key challenges in RL
-  - Real-world applications and case studies
-
-<br>
-
-**Week 2: Markov Decision Processes**
-
-  - States, actions, rewards, transitions
-  - Policies and value functions
-  - Bellman equations
-  - Optimal policies and optimality
+  - Course philosophy — problem-first vs. formalism-first RL
+  - The arc as a ladder of increasingly weak data assumptions
+  - *DP seed:* some problems have recursive structure — recognizing it is a skill we build all term
+  - Linear algebra / probability / optimization review, framed around supervised fine-tuning (gradients, chain rule, SGD, likelihood and expectation)
 
 <br>
 
-**Week 3: Dynamic Programming**
+**Week 2: Supervised Fine-Tuning as the Base Case**
 
-  - Policy evaluation
-  - Policy iteration
-  - Value iteration
-  - Limitations and computational considerations
-
-<br>
-
-**Week 4: Monte Carlo Methods**
-
-  - Monte Carlo prediction
-  - Monte Carlo control
-  - On-policy vs. off-policy learning
-  - Importance sampling
-
-### Part II: Core Algorithms (Weeks 5-9)
+  - Maximum likelihood estimation with ground-truth positives
+  - Behavior cloning as MLE over expert demonstrations; policies as conditional distributions πθ(a\|s)
+  - The limits of pure cloning — distribution shift and compounding errors
+  - *DP seed:* compounding error as a sequential phenomenon — decisions now affect the situation later
 
 <br>
 
-**Week 5: Temporal-Difference Learning**
+**Week 3: Online Imitation**
 
-  - TD prediction (TD(0))
-  - Advantages of TD learning
-  - TD vs. Monte Carlo vs. Dynamic Programming
-  - n-step TD methods
-
-<br>
-
-**Week 6: Q-Learning and SARSA**
-
-  - Q-learning algorithm
-  - SARSA and on-policy control
-  - Expected SARSA
-  - Implementation and debugging strategies
+  - DAgger and interactive imitation — closing the loop between the policy's state distribution and expert labels
+  - The labeling bottleneck: expensive experts, and knowing only that something was *bad*
+  - Introduces the need for negative signal
 
 <br>
 
-**Week 7: Function Approximation**
+**Week 4: Learning From Negative Feedback**
 
-  - Why function approximation?
-  - Linear function approximation
-  - Feature engineering
-  - Convergence considerations
-
-<br>
-
-**Week 8: Deep Q-Networks (DQN)**
-
-  - Neural networks for value approximation
-  - Experience replay
-  - Target networks
-  - Common pitfalls and solutions
+  - The naive fix — flipping the MLE sign on negatives — and why it's catastrophically unstable
+  - Reward as a scalar weighting of log-likelihood
+  - Deriving the REINFORCE estimator informally; the score-function / log-derivative trick
 
 <br>
 
-**Week 9: Policy Gradient Methods**
+**Week 5: Policy Gradients From Your Own Behavior**
 
-  - REINFORCE algorithm
-  - Policy gradient theorem
-  - Baseline techniques
-  - Actor-critic methods
+  - REINFORCE in full — sampling your own trajectories, variance, and baselines
+  - GRPO as a practical, group-relative baseline used in modern LLM fine-tuning
+  - The credit assignment problem stated plainly
+  - *DP seed (highest-leverage):* decomposing return recursively — the value of a state is the reward now plus the value of what comes next (no formalism yet)
 
-### Part III: Advanced Topics & Applications (Weeks 10-13)
-
-<br>
-
-**Week 10: Exploration vs. Exploitation**
-
-  - Multi-armed bandits
-  - Epsilon-greedy, UCB, Thompson sampling
-  - Exploration in deep RL
-  - Curiosity-driven learning
+### Part II: When Trajectories Are Incomplete or Stale (Weeks 6-10)
 
 <br>
 
-**Week 11: Reward Shaping & Design**
+**Week 6: The MDP Formalism (Now Motivated)**
 
-  - Reward engineering challenges
-  - Reward shaping techniques
-  - Inverse reinforcement learning (intro)
-  - Common reward specification mistakes
-
-<br>
-
-**Week 12: RL in Practice**
-
-  - Hyperparameter tuning
-  - Debugging RL agents
-  - Benchmarking and evaluation
-  - Sim-to-real transfer considerations
+  - States, actions, transitions, rewards, discounting, the Markov property
+  - Return and value functions Vπ, Qπ
+  - *Recognition-and-formulation exercise:* formulate a classical, a robotics, and an LLM problem as MDPs and judge their recursive structure
+  - Finite vs. infinite horizon; the Bellman expectation equations as a consequence of recursive return
 
 <br>
 
-**Week 13: Case Studies**
+**Week 7: On-Policy Value Learning**
 
-  - Robotics applications
-  - Game playing (Chess, Go, video games)
-  - Recommendation systems
-  - Resource management
-
-### Part IV: Final Projects (Weeks 14-16)
+  - Partial rollouts and bootstrapping; Monte Carlo vs. Temporal Difference; the bias-variance tradeoff
+  - SARSA and on-policy TD control
+  - Using a learned value function as a baseline / critic for the policy gradient
+  - **Midterm** at end of week (covers Parts I-II through on-policy methods)
 
 <br>
 
-**Week 14-15: Project Development**
+**Week 8: Off-Policy Data and Q-Learning**
 
-  - Work on final projects
-  - In-class project consultations
-  - Peer feedback sessions
+  - The problem of "old" or others' trajectories; on-policy vs. off-policy made concrete
+  - Q-learning as off-policy TD control; the max operator and the Bellman optimality equation
+  - Importance sampling as the alternative correction and its variance pitfalls
+
+<br>
+
+**Week 9: The Formal Core — Value & Policy Iteration**
+
+  - Value iteration and policy iteration; contraction mappings and the Bellman operator
+  - Convergence in the tabular case — the DP payoff
+  - Stochastic approximation of a fixed point — why TD/Q-learning converge (Robbins-Monro conditions)
+
+<br>
+
+**Week 10: Function Approximation**
+
+  - Approximation architectures (linear features → neural networks); why tabular guarantees break
+  - The deadly triad (bootstrapping + off-policy + approximation)
+  - DQN and its stabilizing tricks (target networks, replay buffers) as engineering responses to the deadly triad
+
+### Part III: Unifying Theory & Structure (Weeks 11-12)
+
+<br>
+
+**Week 11: Actor-Critic and the Policy Gradient Theorem**
+
+  - The formal policy gradient theorem — deriving rigorously what REINFORCE approximated
+  - Advantage functions, A2C, and the deterministic policy gradient theorem (DDPG-style)
+  - Trust regions and clipping (PPO); the method-selection decision tree — given your data, which method is warranted?
+
+<br>
+
+**Week 12: Partial Observability, Models, and Synthesis**
+
+  - POMDPs and belief states; connections to sequence models and context in LLMs
+  - Model-based RL introduced briefly as the remaining branch
+  - Case study — modern LLM post-training (SFT → reward modeling → RLHF/GRPO) as one traversal of the whole ladder
+
+### Part IV: Guest Lectures & Projects (Weeks 13-16)
+
+<br>
+
+**Weeks 13-15: Guest Lectures & Project Development**
+
+  - Robotics / imitation learning — learning from demonstrations and failed demonstrations
+  - LLM post-training — a deeper practitioner's view of RLHF, GRPO, reward modeling
+  - Offline RL — the off-policy problem at its extreme: learning from fixed datasets
+  - Model-based RL / planning — learning dynamics and planning (a natural home for classical control / LQC)
+  - In-class project consultations and peer feedback sessions
 
 <br>
 
