@@ -43,35 +43,25 @@ The outline follows a single arc: begin with imitation, progressively relax the 
 
 ### Part I: From Imitation to Self-Improvement (Weeks 1-5)
 
-<br>
-
 **Week 1: Framing + Mathematical Foundations Through the Lens of SFT**
 
   - Course philosophy — problem-first vs. formalism-first RL; the arc as a ladder of increasingly weak data assumptions
   - Math review (linear algebra, probability, optimization) framed around supervised fine-tuning
-
-<br>
 
 **Week 2: Supervised Fine-Tuning as the Base Case**
 
   - Maximum likelihood estimation with ground-truth positives; behavior cloning as MLE over expert demonstrations
   - The limits of pure cloning — distribution shift and compounding errors as a sequential phenomenon
 
-<br>
-
 **Week 3: Online Imitation**
 
   - DAgger and interactive imitation — closing the loop between the policy's states and expert labels
   - The labeling bottleneck motivates the need for negative signal
 
-<br>
-
 **Week 4: Learning From Negative Feedback**
 
   - The naive fix — flipping the MLE sign — and why it's unstable; reward as a scalar weighting of log-likelihood
   - Deriving the REINFORCE estimator informally; the score-function / log-derivative trick
-
-<br>
 
 **Week 5: Policy Gradients From Your Own Behavior**
 
@@ -81,35 +71,25 @@ The outline follows a single arc: begin with imitation, progressively relax the 
 
 ### Part II: When Trajectories Are Incomplete or Stale (Weeks 6-10)
 
-<br>
-
 **Week 6: The MDP Formalism (Now Motivated)**
 
   - States, actions, transitions, rewards, discounting, the Markov property; return and value functions Vπ, Qπ
   - Finite vs. infinite horizon; the Bellman expectation equations as a consequence of recursive return
-
-<br>
 
 **Week 7: On-Policy Value Learning**
 
   - Partial rollouts and bootstrapping; Monte Carlo vs. Temporal Difference; the bias-variance tradeoff
   - SARSA and on-policy TD control; using a learned value function as a baseline / critic for the policy gradient
 
-<br>
-
 **Week 8: Off-Policy Data and Q-Learning**
 
   - The problem of "old" or others' trajectories; on-policy vs. off-policy made concrete
   - Q-learning as off-policy TD control; the Bellman optimality equation; importance sampling and its variance pitfalls
 
-<br>
-
 **Week 9: The Formal Core — Value & Policy Iteration**
 
   - Value iteration and policy iteration; contraction mappings, the Bellman operator, and tabular convergence
   - Stochastic approximation of a fixed point — why TD/Q-learning converge (Robbins-Monro conditions)
-
-<br>
 
 **Week 10: Function Approximation**
 
@@ -118,15 +98,11 @@ The outline follows a single arc: begin with imitation, progressively relax the 
 
 ### Part III: Unifying Theory & Structure (Weeks 11-12)
 
-<br>
-
 **Week 11: Actor-Critic and the Policy Gradient Theorem**
 
   - The formal policy gradient theorem — deriving rigorously what REINFORCE approximated
   - Advantage functions, A2C, DDPG-style deterministic policy gradients; trust regions and clipping (PPO)
   - The method-selection decision tree — given your data, which method is warranted?
-
-<br>
 
 **Week 12: Partial Observability, Models, and Synthesis**
 
@@ -135,8 +111,6 @@ The outline follows a single arc: begin with imitation, progressively relax the 
 
 ### Part IV: Guest Lectures & Projects (Weeks 13-16)
 
-<br>
-
 **Weeks 13-15: Guest Lectures & Project Development**
 
   - Robotics / imitation learning — learning from demonstrations and failed demonstrations
@@ -144,8 +118,6 @@ The outline follows a single arc: begin with imitation, progressively relax the 
   - Offline RL — the off-policy problem at its extreme: learning from fixed datasets
   - Model-based RL / planning — learning dynamics and planning (a natural home for classical control / LQC)
   - In-class project consultations and peer feedback sessions
-
-<br>
 
 **Week 16: Final Presentations**
 
