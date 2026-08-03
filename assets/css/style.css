@@ -207,8 +207,12 @@ em {
 .hero-content .title {
   font-size: 1.125rem;
   color: var(--light-blue);
-  margin-bottom: 1rem;
+  margin-bottom: 0.25rem;
   font-weight: 400;
+}
+
+.hero-content .title:last-of-type {
+  margin-bottom: 1rem;
 }
 
 .hero-content .tagline {
