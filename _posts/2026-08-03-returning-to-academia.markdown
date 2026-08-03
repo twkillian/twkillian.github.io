@@ -1,0 +1,82 @@
+---
+# Layout: Use "post" for blog posts
+layout: post
+
+# Title: The title of your blog post
+title: "Returning to Academia: Motivations and Expectations"
+
+# Date: Publication date (YYYY-MM-DD format)
+date: 2026-08-03
+
+# Tags: List of tags to categorize the post
+tags: [personal vision, career, research, mentorship]
+
+# Optional: Add an image (place in /assets/img/)
+img: daydawn_y_mountain.png
+
+# Show(true) or Hide(false) from listings
+published: true
+---
+
+Today is my first official day as a professor in [Brigham Young University](https://www.byu.edu/)'s [Computer Science department](https://cs.byu.edu). In many ways this was and has been a completely unexpected pivot in my career. From the beginning of my journey into ML, learning of Google Brain and OpenAI as then postdocs David Duvenaud and Matt Johnson (who were finishing up with Ryan Adams at Harvard) discussed career options, I had been dead-set on working within a large tech company's research arm. Hearing about the opportunities to pursue blue-sky research alongside some of the brightest and most dedicated scientists in AI, a fast-paced and exciting area, was remarkably compelling. After nearly a decade of following that dream throughout a PhD, a global pandemic, the "collapse" of industry research (more on this another time), and coming to fully understand my motivations as a scientist I'm excited to start this new journey. This blog post is part therapy, part signposting, and part fulfilling a promise to my future students that I will be as transparently honest about the decisions I make.
+
+When I accepted the offer to join the faculty at BYU, I was immediately hit with doubts as to my adequacy to take on this role. I have so many reasons to feel inadequate. I have been thinking about writing this blog post to quiet down the nagging sense of my own inadequacy as well as put forward a personal vision for myself in this new and exciting change in my career. It's been months in the making/procrastinating, please understand that I'm writing this mostly for myself in hopes that it can be useful for anyone else who may happen across this and is trying to choose between industry and academic options themselves.
+
+There has been a well documented (at least in the social media circles I wade in) migration away from academic positions toward industry. This isn't surprising given the momentum, financial rewards, and access to compute/talent/problems available outside the university environment. Many people I respect have written long explanatory treatises about why they're leaving academia. The reasons they cite are understandable but they have often left me feeling somewhat dissatisfied. As I have understood my own motivations to pursue a career as a professor I have come to better articulate why these reasons don't wholly resonate with me. At its core, I think that it comes down to discovering the vocation one pursues in light of the career they build around it.
+
+## Career vs. Vocation
+
+As I have pondered my personal reasons for leaving full-time industry involvement, I came across the writing of John Paul Lederach about [conflict transformation](https://www.beyondintractability.org/essay/transformation). In a [recent podcast episode](https://www.mormonwomenforethicalgovernment.org/learn/proclaim-peace-season-2-episode-11-art-of-reconciliation-and-moral-imagination-john-paul-lederach) Dr. Lederach discusses his perspectives on reconciliation and his personal efforts he has put forth as an academician _and_ consultant. For him, his _vocation_ and _career_ have aligned to where he has found increasingly personal meaning in that alignment. The passion and purpose of what he does also happens to be what he gets paid for. The important individual meanings of these words and how they are interrelated helped me make sense of my feelings. 
+
+While I won't attempt to categorize the initial motivations of those leaving academia, why they chose to be professors in the first place; I can reflect on the vocation I feel particularly well suited for, how I have come to this realization, and then what has led me to navigate a career to align with it. First, I want to clearly distinguish between these two concepts because I have found them to be conflated, and it's helpful to assert definitions so you may understand where I'm coming from.
+ - **Career** is the paid, structured trajectory of your professional life — the jobs, titles, and advancement you accumulate over time. It is the "what" you do (not completely, but bear with me).
+ - **Vocation** is a deeper sense of calling or purpose in your work, rooted in meaning rather than status, and it may or may not align with your paid career. It is the "why" underlying the professional choices you may make.
+
+ For many, a vocation may be a subset of roles and responsibilities they take on in their career. It may motivate the jobs, locations, and direction one takes as they build a career. I deeply admire those that define a vocation outside of a traditional career, e.g. those that volunteer for community programs, donate large sums of money, facilitate mentorship to underrepresented groups, etc. I struggle to put aside time for these kinds of activities beyond my family, church, and professional obligations. For me, as I have come to understand my desired vocation, I have sought alignment in my career to promote what I feel specifically meant to do to make the most impact in my professional pursuits.
+
+ While others have pursued impact as an exogenously measured quantity, if poorly defined, via their choices to work for the "hottest" tech company, I have found that the most measurable impact I can make is in the similarly poorly defined currency of individual progress and development. I want to be invested in people and their growth as scientists (and otherwise). For the better part of my life, I have found the most joy and peace while being a mentor, collaborator, and friend. From [training new missionaries](/papers/TWK_Stockholm_Guide.pdf), being a coach, [parent](https://x.com/tw_killian/status/1800352727593288038?s=20), scoutmaster, manager, and so on I love promoting growth and independent discovery.
+
+## Furthering my community
+
+As I hinted at [in an earlier post](/science-is-a-global-endeavor/), I was fortunate to visit MBZUAI and Abu Dhabi in February to celebrate the University's [5 year anniversary](https://mbzuai.ac.ae/five-year-anniversary/). This experience did more to clarify my career trajectory than I expected. MBZUAI is a relatively young institution operating under an explicit mandate to be globally relevant while simultaneously elevating the country's profile academically and scientifically. Being exposed to that vision up close, I came away with a deep appreciation for the love and respect Emiratis have for builders, founders, and all others investing in their future.
+
+<figure style="display: flex; gap: 1rem; flex-wrap: wrap; justify-content: center;">
+  <img src="/assets/img/MBZUAI_entrance.jpeg" alt="The main entrance to MBZUAI in Abu Dhabi" style="flex: 1 1 0; min-width: 280px; max-width: 50%; height: auto; object-fit: cover;">
+  <img src="/assets/img/BYU_entrance.jpeg" alt="An entrance to Brigham Young University in Provo, Utah" style="flex: 1 1 0; min-width: 280px; max-width: 50%; height: auto; object-fit: cover;">
+</figure>
+
+My experiences in Abu Dhabi also left me wondering whether I couldn't put my own professional efforts toward uplifting the communities from which I draw my personal identity — whether I could help build upon and further the efforts already gaining momentum closer to home. While I'd already agreed to join the faculty at BYU, this observation deepened my resolve to focus my career on the students and burgeoning AI community in Utah. I benefitted from ambitious and visionary mentors at BYU as an undergrad; returning gives me the chance to expand precisely the kind of mentorship I was afforded. I get to sit on the other side of that relationship now. I want to help my students realize goals they may not yet feel capable of, or even fully appreciate. In my experience, BYU students are talented, mature, and genuinely hungry to do something of value in the world.
+
+I get to bring something with me. Having had the privilege of exposure to a variety of world-class institutions, I can help students see the full extent of the opportunities within their reach — if they're willing to work hard for them. I am returning to academia to help students learn how to think, how to use (and build) the modern AI tools uniquely positioned to help others, and how to operate in a space of intrinsically motivated research — to pursue science for the love of discovery rather than from a place of external achievement.
+
+
+## Pursuing a vision of clear-thinking, intrinsically motivated science
+
+The heart of what I want to do at BYU is help students learn *how to think*. Not what to think, and not merely which tools to reach for, but the harder and more durable skill of reasoning carefully through hard problems. I don't buy the argument that advances in AI will make the university experience obsolete. If anything, they raise the need to educate young people: to understand how these systems are built, what their blind spots are, and how to harness them to best effect. Hats off to [Shreya and Niloofar for articulating similar points (see image below)](https://x.com/sh_reya/status/2071999241816522949?s=20). Granted, there will be changes in how we train students and how we engage their desire to learn and their curiosity. In an era where it is easier than ever to generate a plausible-sounding answer as a shortcut, the ability to tell a good idea from a merely fluent one — to establish a result rigorously and to know when you actually understand something — has only grown more valuable. It's the right time and will continue to be the right time to invest in the next generations of technologists and scientists.
+
+<figure style="text-align: center; margin: 1.5rem auto; max-width: 595px;">
+  <img src="/assets/img/ShreyaShankar_post.png" alt="A Twitter/X exchange between Shreya Shankar and Niloofar Mireshghallah on why AI advances increase, rather than reduce, the need to educate students" style="width: 100%; height: auto;">
+</figure>
+
+
+Modern AI tools sit right at the center of this. I want students to learn to *use* them and to *build* them, because these tools are uniquely positioned to help others when they're wielded by people who understand what they're doing. Kyunghyun Cho's recent description of his experiences [teaching an introductory ML course](https://kyunghyuncho.me/teaching-fundamentals-of-machine-learning/) is a template for how to do this effectively. But a tool is only as good as the thinking behind its use. My hope is to graduate students who can pick up the most powerful methods available and apply them with judgment, taste, and a clear sense of the problem they're actually trying to solve. Most importantly, they will seek to understand the positive and negative impacts of the technology they are helping to develop.
+
+Underlying all of this is a conviction about *why* we do science in the first place. Too much of the field is organized around external achievement — the prestigious result, the impressive benchmark, the affiliation that opens doors. I've chased that pull myself, and I've watched it quietly distort priorities. What I want to cultivate, in my students and in myself, is intrinsically motivated research: the pursuit of science for the love of discovery rather than from a place of external validation. Publications and recognition will follow. If I can help a student find genuine joy in exploration and knowledge creation — the same joy [I have articulated as the beauty of the "relay race" of science](/science-is-a-global-endeavor/) — I'll consider that a success worth far more than any single publication. Again, I'm pursuing a vocation built around the currency of personal growth.
+
+Together my lab will pursue a productive alternative to fear-based, externally-validated goals through *enthusiastic investment in the process* of research and learning, while remaining *peacefully detached* from the outcome. Failure is a natural part of ambitious endeavors and helps frame success. I think that reframing has a great deal to say about how to approach research — and running, and life — but it deserves more room than I can give it here, so I'll save this personal vision and its motivations for a post of its own.
+
+## Personal motivations
+
+I won't pretend this decision was made in a vacuum of pure professional calculus. Some of the most important reasons I'm making this decision have nothing to do with research at all.
+
+I want to be honest about the tradeoffs, because they are real. Leaving full-time industry involvement means walking away from compensation, from recognition, and from the near-limitless compute and resources that make some problems tractable in ways they simply aren't elsewhere. I don't want to wave that away — those are genuine sacrifices, and anyone weighing the same choice deserves to hear them named plainly. But I've made this choice *deliberately*, and I've made it in favor of my family and my personal health.
+
+Part of that is presence. Academia, for all its own demands, affords me more control over how I spend my time and where I root my life. I want to be physically present for my spouse and my kids, planted in a community rather than perpetually optimizing for the next opportunity. BYU is a place that resonates with who I want to be at home, not just at work. For all the excitement of pushing for the next model release, scrambling to fix the latest infra bug, or adapting our target benchmark performance at the last minute to account for another new model, these efforts take a serious toll on the mental, emotional, and physical health of people at the AI frontier. I struggled to find a clear balance that worked for me. My family suffered as a byproduct of my long hours and perpetual stress of being behind schedule. I want my children to know that I'll be home and that I'm doing meaningful work to help others. I want them to have the great benefits afforded living next to a world-class university, to envision what their lives can be beyond the boundaries of their current lived experience.
+
+## A final note of self-reflection
+
+If you've made it this far, you've indulged a fair amount of what I admitted at the outset is part therapy and part signposting. So thank you for your patience with it. I also write this with some hesitation as I know so many people more talented than I am and who have been more dedicated in preparing for a faculty position. I lucked into an immediate path to return home to Provo, Utah, where I can make a sizeable impact while pursuing research that I am, myself, most inspired by.
+
+I don't have this all figured out. The nagging sense of inadequacy that prompted me to start writing hasn't fully quieted down, and I suspect it won't for a while. But putting these thoughts down has helped me see the shape of my own reasoning more clearly, and if any of it proves useful to someone else caught between an industry offer and an academic one, then it will have been worth writing (and maybe procrastinating, a little bit. Maybe?). Some might read my choices as a justification for not "making it" in industry, and I feel the pull of that framing myself to some degree. In fact, I often feel as though I failed my undergrad self's vision for a career taking me far away from Utah to make a life for myself and my family elsewhere. Returning to Utah is taking some readjustment of that vision but it comes with a deeper sense of appreciation of where I can leverage those far-flung experiences toward the vocation I've identified and am enthusiastically pursuing. 
+
+I'll try to keep being this honest as the road unfolds. Reach out if you want to be a part of the ride and/or you have ideas on how to best leverage RL for real world use. I'm actively recruiting grad students and collaborators that are seeking a lab where their curiosity is the only limitation for their research. Send me an email, DM, or whatever. Stay tuned for a more thorough set of research directions, an introduction to our new lab, and some of the exciting AI initiatives we're building at BYU.
