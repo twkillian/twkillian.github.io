@@ -4,6 +4,13 @@ layout: teaching
 
 # Title: The title of your teaching activity
 title: "Introduction to Machine Learning"
+card_title: "Introduction to<br>Machine Learning"
+
+# Summary: Shown on listing cards
+summary: "Comprehensive undergraduate introduction to supervised learning, unsupervised learning, and practical ML skills, pairing theory with hands-on implementation of core algorithms."
+
+# Order: Explicit display order on listings (lower shows first)
+order: 4
 
 # Date: Used for sorting (YYYY-MM-DD format)
 date: 2026-04-01

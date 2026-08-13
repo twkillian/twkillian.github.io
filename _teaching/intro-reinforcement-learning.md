@@ -5,6 +5,12 @@ layout: teaching
 # Title: The title of your teaching activity
 title: "Introduction to Reinforcement Learning"
 
+# Summary: Shown on listing cards
+summary: "Offered as CS 401R at BYU in Fall 2026. A problem-first introduction to RL that starts from a concrete goal and progressively relaxes what you can assume about your data, introducing formalism only when it becomes necessary."
+
+# Order: Explicit display order on listings (lower shows first)
+order: 1
+
 # Date: Used for sorting (YYYY-MM-DD format)
 date: 2026-03-01
 

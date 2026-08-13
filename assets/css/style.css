@@ -408,6 +408,122 @@ em {
   margin-top: 2rem;
 }
 
+/* === Carousel === */
+/* Wraps a .blog-grid and pages through its cards with understated side arrows.
+   Progressive enhancement: without JS the grid renders normally and arrows stay hidden. */
+.carousel {
+  position: relative;
+  margin-top: 2rem;
+  /* Slide timing. easeInOutCubic accelerates and settles gently at both ends. */
+  --carousel-duration: 0.85s;
+  --carousel-easing: cubic-bezier(0.65, 0, 0.35, 1);
+}
+
+.carousel-viewport {
+  overflow: hidden;
+}
+
+.carousel .blog-grid {
+  margin-top: 0;
+  grid-auto-flow: column;
+  grid-auto-columns: calc((100% - (var(--carousel-gap, 2rem) * (var(--carousel-per-view, 3) - 1))) / var(--carousel-per-view, 3));
+  grid-template-columns: none;
+  transition: transform var(--carousel-duration) var(--carousel-easing);
+  will-change: transform;
+}
+
+.carousel.is-static .blog-grid {
+  grid-auto-flow: row;
+  grid-auto-columns: auto;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  transition: none;
+  transform: none;
+}
+
+.carousel-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  padding: 0;
+  background-color: var(--primary-bg);
+  color: var(--navy);
+  border: 1px solid var(--border-color);
+  border-radius: 50%;
+  box-shadow: var(--shadow);
+  cursor: pointer;
+  font-size: 1rem;
+  line-height: 1;
+  opacity: 0.55;
+  transition: opacity 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+}
+
+.carousel.is-active .carousel-arrow {
+  display: flex;
+}
+
+.carousel-arrow:hover,
+.carousel-arrow:focus-visible {
+  opacity: 1;
+  color: var(--light-blue);
+  border-color: var(--light-blue);
+  outline: none;
+}
+
+.carousel-arrow:focus-visible {
+  box-shadow: 0 0 0 3px rgba(74, 144, 194, 0.35);
+}
+
+.carousel-arrow-prev { left: -1.25rem; }
+.carousel-arrow-next { right: -1.25rem; }
+
+.carousel-dots {
+  display: none;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-top: 1.5rem;
+}
+
+.carousel.is-active .carousel-dots {
+  display: flex;
+}
+
+.carousel-dot {
+  width: 0.5rem;
+  height: 0.5rem;
+  padding: 0;
+  background-color: var(--border-color);
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.carousel-dot[aria-current="true"] {
+  background-color: var(--light-blue);
+  transform: scale(1.3);
+}
+
+.carousel-dot:focus-visible {
+  outline: 2px solid var(--light-blue);
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .carousel .blog-grid { transition: none; }
+}
+
+/* Arrows sit inside the viewport when there's no room beside it */
+@media (max-width: 1240px) {
+  .carousel-arrow-prev { left: 0.25rem; }
+  .carousel-arrow-next { right: 0.25rem; }
+}
+
 .blog-card {
   background: var(--primary-bg);
   border-radius: 8px;

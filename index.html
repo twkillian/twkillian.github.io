@@ -41,7 +41,7 @@ layout: default
         <p class="tagline">Reinforcement Learning | Machine Learning | Decision Making Under Uncertainty</p>
 
         <div class="hero-links">
-          <a href="mailto:twkillian@gmail.com" title="Email"><i class="fa fa-envelope"></i></a>
+          <a href="mailto:tkillian@cs.byu.edu" title="Email"><i class="fa fa-envelope"></i></a>
           <a href="https://scholar.google.com/citations?user=xA3RcaUAAAAJ&hl=en" target="_blank" title="Google Scholar"><i class="ai ai-google-scholar"></i></a>
           <a href="https://github.com/twkillian" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
           <a href="https://twitter.com/tw_killian" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a>
@@ -116,27 +116,30 @@ layout: default
     <div class="container">
       <h2 class="section-title">Research</h2>
       <p style="text-align: center; color: var(--text-light); margin-bottom: 3rem; font-size: 1.05rem;">
-        Current research projects and interests.
+        Sequential decision making under partial observability, delayed feedback, and irreversibility.
       </p>
 
-      {% assign recent_research = site.research | sort: 'date' | reverse | limit: 3 %}
+      {% comment %} Pinned items first via `order:`; anything without it appends by date. {% endcomment %}
+      {% assign recent_research = site.research | sort: 'order', 'last' %}
       {% if recent_research.size > 0 %}
+      {% include carousel-open.html label="research areas" per_view=3 %}
       <div class="blog-grid">
         {% for item in recent_research %}
         <article class="blog-card">
           <div class="blog-card-content">
             <div class="blog-card-date">{{ item.status }}</div>
-            <h2 class="blog-card-title">
-              <a href="{{ item.url | prepend: site.baseurl }}">{{ item.title }}</a>
+            <h2 class="blog-card-title" style="text-align: left;">
+              <a href="{{ item.url | prepend: site.baseurl }}">{% if item.card_title %}{{ item.card_title }}{% else %}{{ item.title }}{% endif %}</a>
             </h2>
             <p class="blog-card-excerpt">
-              {{ item.content | strip_html | truncatewords: 30 }}
+              {% if item.summary %}{{ item.summary | truncatewords: 32 }}{% else %}{{ item.content | strip_html | truncatewords: 30 }}{% endif %}
             </p>
             <a href="{{ item.url | prepend: site.baseurl }}" class="btn btn-outline">Learn More</a>
           </div>
         </article>
         {% endfor %}
       </div>
+      {% include carousel-close.html label="research areas" %}
       <div style="text-align: center; margin-top: 2rem;">
         <a href="/research" class="btn">View All Research</a>
       </div>
@@ -157,24 +160,27 @@ layout: default
         Courses, mentorship, and educational activities.
       </p>
 
-      {% assign recent_teaching = site.teaching | sort: 'date' | reverse | limit: 3 %}
+      {% comment %} Pinned items first via `order:`; anything without it appends by date. {% endcomment %}
+      {% assign recent_teaching = site.teaching | sort: 'order', 'last' %}
       {% if recent_teaching.size > 0 %}
+      {% include carousel-open.html label="teaching" per_view=3 %}
       <div class="blog-grid">
         {% for item in recent_teaching %}
         <article class="blog-card">
           <div class="blog-card-content">
             <div class="blog-card-date">{{ item.status }}</div>
-            <h2 class="blog-card-title">
-              <a href="{{ item.url | prepend: site.baseurl }}">{{ item.title }}</a>
+            <h2 class="blog-card-title" style="text-align: left;">
+              <a href="{{ item.url | prepend: site.baseurl }}">{% if item.card_title %}{{ item.card_title }}{% else %}{{ item.title }}{% endif %}</a>
             </h2>
             <p class="blog-card-excerpt">
-              {{ item.content | strip_html | truncatewords: 30 }}
+              {% if item.summary %}{{ item.summary | truncatewords: 32 }}{% else %}{{ item.content | strip_html | truncatewords: 30 }}{% endif %}
             </p>
             <a href="{{ item.url | prepend: site.baseurl }}" class="btn btn-outline">Learn More</a>
           </div>
         </article>
         {% endfor %}
       </div>
+      {% include carousel-close.html label="teaching" %}
       <div style="text-align: center; margin-top: 2rem;">
         <a href="/teaching" class="btn">View All Teaching</a>
       </div>
@@ -210,8 +216,9 @@ layout: default
       </p>
 
       {% if site.posts.size > 0 %}
+      {% include carousel-open.html label="blog posts" per_view=3 %}
       <div class="blog-grid">
-        {% for post in site.posts limit:3 %}
+        {% for post in site.posts %}
         <article class="blog-card">
           {% if post.img %}
           <img src="{{ site.baseurl }}/assets/img/{{ post.img }}" alt="{{ post.title }}" class="blog-card-image">
@@ -229,6 +236,7 @@ layout: default
         </article>
         {% endfor %}
       </div>
+      {% include carousel-close.html label="blog posts" %}
       <div style="text-align: center; margin-top: 2rem;">
         <a href="/blog" class="btn">View All Posts</a>
       </div>
@@ -246,7 +254,7 @@ layout: default
   <footer>
     <div class="footer-content">
       <div class="footer-links">
-        <a href="mailto:twkillian@gmail.com" title="Email"><i class="fa fa-envelope"></i></a>
+        <a href="mailto:tkillian@cs.byu.edu" title="Email"><i class="fa fa-envelope"></i></a>
         <a href="https://scholar.google.com/citations?user=xA3RcaUAAAAJ&hl=en" target="_blank" title="Google Scholar"><i class="ai ai-google-scholar"></i></a>
         <a href="https://github.com/twkillian" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
         <a href="https://twitter.com/tw_killian" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a>

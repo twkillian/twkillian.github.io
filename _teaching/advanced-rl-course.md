@@ -5,6 +5,12 @@ layout: teaching
 # Title: The title of your teaching activity
 title: "Advanced Topics in Reinforcement Learning"
 
+# Summary: Shown on listing cards
+summary: "Graduate-level course on modern RL — offline RL, safe RL, and real-world deployment — bridging theory and practice through implementation projects."
+
+# Order: Explicit display order on listings (lower shows first)
+order: 5
+
 # Date: Used for sorting (YYYY-MM-DD format)
 date: 2026-02-01
 
