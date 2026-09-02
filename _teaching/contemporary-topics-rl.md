@@ -33,7 +33,7 @@ The course is organized that way. Each part names an assumption, shows where it 
 
 ## Relationship to Other Courses
 
-This is a **survey**, not a methods course. [Introduction to Reinforcement Learning](/teaching/intro-reinforcement-learning/) establishes the formalism and the core algorithms; [Advanced Topics in Reinforcement Learning](/teaching/advanced-rl-course/) develops deep RL and the mathematics beneath it. Either is sufficient preparation. Students who have taken the advanced course will recognize several of the failure modes discussed here as the frontier version of problems they debugged by hand.
+This is a **survey**, not a methods course. [Introduction to Reinforcement Learning](/teaching/intro-reinforcement-learning/) establishes the formalism and the core algorithms; [Advanced Topics in Reinforcement Learning](/teaching/advanced-rl-course/) develops deep RL and the mathematics beneath it. Either supplies enough RL background to follow the reading here, though this course is pitched at the graduate level and expects a graduate reading load and an original contribution by the end. Students who have taken the advanced course will recognize several of the failure modes discussed here as the frontier version of problems they debugged by hand.
 
 ## Learning Objectives
 

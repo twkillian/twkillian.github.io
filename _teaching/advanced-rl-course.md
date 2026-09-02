@@ -18,12 +18,12 @@ date: 2026-02-01
 status: "Planned"
 
 # Tags: List of tags to categorize the teaching activity
-tags: [Graduate Course, Deep Reinforcement Learning, Reinforcement Learning]
+tags: [Advanced Undergraduate Course, Graduate Course, Deep Reinforcement Learning, Reinforcement Learning]
 ---
 
 ## Course Overview
 
-A second course in reinforcement learning for students who already know what a Bellman equation is. The subject is **deep** RL specifically: what changes, mathematically and practically, when the tabular value function is replaced by a neural network. The course follows the arc of Graesser & Keng's *Foundations of Deep Reinforcement Learning: Theory and Practice in Python* — algorithms first, then the practical craft of making them run, then the design of the environment itself — while deriving in full the results the introductory course was content to state.
+A second course in reinforcement learning, aimed at advanced undergraduates and beginning graduate students who already know what a Bellman equation is. The subject is **deep** RL specifically: what changes, mathematically and practically, when the tabular value function is replaced by a neural network. The course follows the arc of Graesser & Keng's *Foundations of Deep Reinforcement Learning: Theory and Practice in Python* — algorithms first, then the practical craft of making them run, then the design of the environment itself — while deriving in full the results the introductory course was content to state.
 
 ## Course Description
 
@@ -35,7 +35,7 @@ The final third of the course follows the book into territory that most RL cours
 
 ## Relationship to Introduction to Reinforcement Learning
 
-This course builds directly on [Introduction to Reinforcement Learning](/teaching/intro-reinforcement-learning/) (CS 401R). That course is problem-first: it introduces formalism only when a weakening of the data assumptions makes it necessary, and it arrives at function approximation, the deadly triad, and the policy gradient theorem near the end, with the derivations compressed.
+This course builds directly on [Introduction to Reinforcement Learning](/teaching/intro-reinforcement-learning/) (CS 401R). That course is written for second- and third-year undergraduates and is problem-first: it introduces formalism only when a weakening of the data assumptions makes it necessary, and it arrives at function approximation, the deadly triad, and the policy gradient theorem near the end, with the derivations compressed.
 
 This course begins exactly where those compressions were made. Everything the introductory course sketched informally — REINFORCE from the log-derivative trick, DQN's stabilizing machinery, the policy gradient theorem, PPO's clipping — is rebuilt rigorously and then extended. Students who took the introductory course will recognize the first two weeks as a re-derivation of familiar material at a level of care that was not available the first time.
 
@@ -181,6 +181,8 @@ The outline follows the four parts of Graesser & Keng, with a fifth part on the 
 <br>
 
 ## Prerequisites
+
+Two routes into the course are expected: advanced undergraduates continuing on from CS 401R, and beginning graduate students arriving with comparable preparation from elsewhere. The bar below is the same either way.
 
 **Required:**
 

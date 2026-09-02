@@ -23,7 +23,7 @@ tags: [Undergraduate Course, Reinforcement Learning, Introductory]
 
 ## Course Overview
 
-Offered as **CS 401R at BYU in Fall 2026**, this is a problem-first introduction to reinforcement learning for advanced undergraduates and beginning graduate students. Rather than deriving RL from first principles and arriving at applications at the end, the course begins with a concrete goal — *you have a model that does something, and you want it to do better* — and progressively relaxes the assumptions you can make about your data. Each relaxation (positives only → negatives → partial rollouts → off-policy data → unobserved state) motivates the next method. Formalism is introduced when it becomes *necessary*, not before.
+Offered as **CS 401R at BYU in Fall 2026**, this is a problem-first introduction to reinforcement learning designed for second- and third-year undergraduates. Rather than deriving RL from first principles and arriving at applications at the end, the course begins with a concrete goal — *you have a model that does something, and you want it to do better* — and progressively relaxes the assumptions you can make about your data. Each relaxation (positives only → negatives → partial rollouts → off-policy data → unobserved state) motivates the next method. Formalism is introduced when it becomes *necessary*, not before.
 
 ## Course Description
 
