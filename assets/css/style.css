@@ -109,6 +109,8 @@ em {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
+  row-gap: 0.5rem;
 }
 
 .navbar-brand {
@@ -121,6 +123,8 @@ em {
 .navbar-nav {
   display: flex;
   gap: 2rem;
+  row-gap: 0.5rem;
+  flex-wrap: wrap;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -137,6 +141,18 @@ em {
 .navbar-nav a:hover {
   color: white;
   border-bottom-color: var(--accent-blue);
+}
+
+.navbar-nav a.navbar-nav-lab {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  white-space: nowrap;
+}
+
+.navbar-nav-lab img {
+  height: 1.15em;
+  width: auto;
 }
 
 /* === Layout === */
