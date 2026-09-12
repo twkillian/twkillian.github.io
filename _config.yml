@@ -20,7 +20,23 @@ email: tkillian@cs.byu.edu # add your Email address
 # discus-identifier: mr-brown # add your discus identifier
 
 # Tracker
-analytics: # Google Analytics
+# Google Analytics 4 measurement ID, emitted by _includes/analytics.html and
+# only in production builds. Replaces the old empty `analytics:` key, which fed
+# an obsolete analytics.js snippet and rendered a broken, no-op tag.
+#
+# This is the EXISTING GA4 property that already holds this site's history — the
+# same property the retired UA-147627714-1 tag had been feeding indirectly. It
+# is not a new one, so no history is lost or split.
+#
+# byu-adept-lab.github.io must carry this identical value. That is what lets
+# GA4 stitch one session across both hostnames when a visitor follows the nav
+# link to the lab site; the two sites stay separable via the `hostname`
+# dimension. Cross-domain measurement is enabled once in the GA4 admin, listing
+# both hostnames.
+#
+# In GA4 the value is shown under:
+#   Admin > Data streams > (the web stream) > Measurement ID  (top right)
+google_analytics: G-4261TQJZV6
 
 # Build Settings
 markdown: kramdown

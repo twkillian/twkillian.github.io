@@ -105,13 +105,12 @@
 	<!-- RSS Feed -->
 	{% feed_meta %}
 
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-147627714-1"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'UA-147627714-1');
-  </script>
+  {%- comment -%}
+    Google Analytics 4. Replaces the hardcoded UA-147627714-1 gtag.js block
+    that used to sit here and reached GA4 indirectly via connected site tags;
+    see _includes/analytics.html for the full history. Kept in <head>, where
+    the old tag was, so measurement timing is unchanged. Included here and
+    only here, so each page carries exactly one Google tag.
+  {%- endcomment -%}
+  {% include analytics.html %}
 </head>

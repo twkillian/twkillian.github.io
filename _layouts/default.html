@@ -8,6 +8,11 @@
   </div>
   
   <script src="{{ site.baseurl }}/assets/js/carousel.js" defer></script>
-  {% include analytics.html %}
+  {%- comment -%}
+    analytics.html is now included from _includes/head.html instead, so the
+    Google tag loads in <head> as it did before the GA4 swap. Do not re-add
+    the include here: it would put two tags on every page and double-count
+    every pageview into the same property.
+  {%- endcomment -%}
 </body>
 </html>
