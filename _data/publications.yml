@@ -1,5 +1,18 @@
 - year: 2026
   papers:
+    - title: "When EOS Tokens Disagree: Understanding Length Inflation in On-Policy Distillation"
+      authors: "Yuxiao Yang, Tianrun Yu, Shangzhe Li, Kaixiang Zhao, Xuchao Zhang, Chetan Bansal, Huaxiu Yao, <strong>Taylor W. Killian</strong>, Weitong Zhang"
+      venue: "arXiv pre-print"
+      description: "On-policy distillation can suppress a student's preferred end-of-sequence token when the teacher uses a different but equivalent stopping token, causing severe length inflation. Aggregating equivalent EOS probabilities into one semantic stopping action substantially reduces excessive responses and truncation across Qwen3, Llama, and Gemma."
+      links:
+        - text: "Website"
+          url: "https://uncsciml.github.io/opd-eos-website/"
+        - text: "Paper"
+          url: "https://arxiv.org/abs/2609.20511"
+        - text: "Code"
+          url: "https://github.com/UNCSciML/opd-eos"
+      featured: false
+
     - title: "LARK: Learnability-Grounded Trajectory Selection for Efficient Reasoning Distillation"
       authors: "Tianrun Yu, Kaixiang Zhao, Chih-Chun Chen, Amanda Hughes, <strong>Taylor W. Killian</strong>, Fenglong Ma, Weitong Zhang, Porter Jenkins"
       venue: "arXiv pre-print"
