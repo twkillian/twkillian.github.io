@@ -1,5 +1,14 @@
 - year: 2026
   papers:
+    - title: "Concise Reasoning in the Lens of Lagrangian Optimization"
+      authors: "Chengqian Gao, Haonan Li, <strong>Taylor W. Killian</strong>, Jianshu She, Renxi Wang, Liqun Ma, Zhoujun Cheng, Shibo Hao, Zhiqiang Xu"
+      venue: "NeurIPS 2026"
+      description: "PALU is a pragmatic optimization strategy that streamlines LLM reasoning by treating concision as a mathematical trade-off between output length and accuracy. It successfully reduces response length by 65% while boosting performance across various domains and model scales, proving that shorter, more focused reasoning chains can actually be more effective."
+      links:
+        - text: "Paper"
+          url: "https://arxiv.org/abs/2510.10168"
+      featured: true
+
     - title: "When EOS Tokens Disagree: Understanding Length Inflation in On-Policy Distillation"
       authors: "Yuxiao Yang, Tianrun Yu, Shangzhe Li, Kaixiang Zhao, Xuchao Zhang, Chetan Bansal, Huaxiu Yao, <strong>Taylor W. Killian</strong>, Weitong Zhang"
       venue: "arXiv pre-print"
@@ -15,14 +24,14 @@
 
     - title: "LARK: Learnability-Grounded Trajectory Selection for Efficient Reasoning Distillation"
       authors: "Tianrun Yu, Kaixiang Zhao, Chih-Chun Chen, Amanda Hughes, <strong>Taylor W. Killian</strong>, Fenglong Ma, Weitong Zhang, Porter Jenkins"
-      venue: "arXiv pre-print"
+      venue: "NeurIPS 2026"
       description: "LARK introduces a principled approach to distillation that focuses on selecting teacher-generated reasoning trajectories based on what the student can actually learn from, rather than relying on heuristics like quality or confidence. By characterizing trajectory learnability through how quickly it reduces training loss and balancing this with distributional coverage, we achieve consistent improvements in reasoning distillation across multiple models and tasks."
       links:
         - text: "Paper"
           url: "https://arxiv.org/abs/2605.30651"
         - text: "Code"
           url: "https://github.com/Tianrun-Yu/LARK"
-      featured: false
+      featured: true
 
     - title: "Efficient Agentic Reasoning Through Self-Regulated Simulative Planning"
       authors: "Mingkai Deng, Jinyu Hou, Lara Sá Neves, Varad Pimpalkhute, <strong>Taylor W. Killian</strong>, Zhengzhong Liu, Eric P. Xing"
@@ -79,14 +88,6 @@
 
 - year: 2025
   papers:
-    - title: "Concise Reasoning in the Lens of Lagrangian Optimization"
-      authors: "Chengqian Gao, Haonan Li, <strong>Taylor W. Killian</strong>, Jianshu She, Renxi Wang, Liqun Ma, Zhoujun Cheng, Shibo Hao, Zhiqiang Xu"
-      venue: "arXiv pre-print"
-      description: "PALU is a pragmatic optimization strategy that streamlines LLM reasoning by treating concision as a mathematical trade-off between output length and accuracy. It successfully reduces response length by 65% while boosting performance across various domains and model scales, proving that shorter, more focused reasoning chains can actually be more effective."
-      links:
-        - text: "Paper"
-          url: "https://arxiv.org/abs/2510.10168"
-      featured: false
 
     - title: "K2-V2: A 360-Open, Reasoning-Enhanced LLM"
       authors: "K2 Team, Institute of Foundation Models"
