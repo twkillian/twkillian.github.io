@@ -16,7 +16,7 @@ date: 2026-08-01
 status: "Recruiting"
 
 # Summary: Shown on listing cards
-summary: "Undergraduates take on real open questions, not literature summaries — and build new methods with me when a question calls for one."
+summary: "BYU Undergraduates take on real open questions, not literature summaries — and build new methods to directly address the research problems they face."
 
 # Tags: List of tags to categorize the teaching activity
 tags: [Research Mentorship, Undergraduate, Reinforcement Learning]
@@ -24,11 +24,13 @@ tags: [Research Mentorship, Undergraduate, Reinforcement Learning]
 
 ## Overview
 
-I take undergraduates into my research group and give them real problems. Not literature summaries or data cleaning for someone else's paper — a question nobody has answered yet, scoped so that a motivated student can make progress on it in a semester or two.
+I take BYU undergraduates into my research group and give them real problems. Not literature summaries or data cleaning for someone else's paper — a question nobody has answered yet, scoped so that a motivated student can make progress on it in a semester or two.
 
 I was an undergraduate at BYU myself, and the mentorship I got here is a large part of why I came back. BYU students are talented and genuinely hungry to do something worthwhile, and I intend to build my group around that. Some projects begin by pushing an established method until it breaks; others call for building something that does not exist yet, and I would like to develop those methods together. Either way the results genuinely determine what the group does next.
 
 Part of what I want to offer is a clearer sense of what is actually within reach. Having worked at several world-class institutions, I can tell you which opportunities are realistic and what it takes to get there.
+
+<em> Note: I am a strong believer in the value of undergraduate research and that it is best done in-person. At this time I am is only able to support BYU undergraduates who are on campus. </em>
 
 <br>
 
