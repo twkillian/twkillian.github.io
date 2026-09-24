@@ -30,7 +30,7 @@ I was an undergraduate at BYU myself, and the mentorship I got here is a large p
 
 Part of what I want to offer is a clearer sense of what is actually within reach. Having worked at several world-class institutions, I can tell you which opportunities are realistic and what it takes to get there.
 
-<em> Note: I am a strong believer in the value of undergraduate research and that it is best done in-person. At this time I am is only able to support BYU undergraduates who are on campus. </em>
+<em> Note: I am a strong believer in the value of undergraduate research and that it is best done in-person. At this time I am only able to support BYU undergraduates who are on campus. </em>
 
 <br>
 
