@@ -1,5 +1,32 @@
 - year: 2026
   papers:
+    - title: "REVO: Rollout-Efficient Off-Policy Distillation via Variance-Guided Reuse"
+      authors: "Yuxiao Yang, Shangzhe Li, Tianrun Yu, Kaixiang Zhao, <strong>Taylor W. Killian</strong>, Weitong Zhang"
+      venue: "arXiv pre-print"
+      description: "REVO improves rollout efficiency in on-policy distillation by reusing student rollouts for multi-step updates, correcting policy mismatch with stabilized prefix weighting and one-step resampling, and prioritizing informative token positions through variance-guided reuse."
+      links:
+        - text: "Paper"
+          url: "https://arxiv.org/abs/2609.37500"
+      featured: false
+
+    - title: "An RL View of OPD: Least Square Policy Distillation for Sample-Efficient LLM Reasoning"
+      authors: "Shangzhe Li, Yuxiao Yang, Tianrun Yu, Kaixiang Zhao, Xiaoyun Wang, <strong>Taylor W. Killian</strong>, Weitong Zhang"
+      venue: "arXiv pre-print"
+      description: "We study on-policy distillation through the lens of reinforcement learning and introduce Least-Square Policy Distillation, which combines optimistic exploration and off-policy data reuse to improve rollout efficiency while preserving policy diversity."
+      links:
+        - text: "Paper"
+          url: "https://arxiv.org/abs/2609.35505"
+      featured: false
+
+    - title: "Rethinking Training-Inference Mismatch in LLM Reinforcement Learning: Where It Arises and How to Correct It"
+      authors: "Tianrun Yu, Kaixiang Zhao, Shangzhe Li, Yuxiao Yang, Porter Jenkins, Weitong Zhang, <strong>Taylor W. Killian</strong>"
+      venue: "arXiv pre-print"
+      description: "We characterize the mismatch between inference and training engines in reinforcement learning for language models and introduce calibrated importance sampling to control its effect on policy updates with bounded error."
+      links:
+        - text: "Paper"
+          url: "https://arxiv.org/abs/2609.32444"
+      featured: false
+
     - title: "Concise Reasoning in the Lens of Lagrangian Optimization"
       authors: "Chengqian Gao, Haonan Li, <strong>Taylor W. Killian</strong>, Jianshu She, Renxi Wang, Liqun Ma, Zhoujun Cheng, Shibo Hao, Zhiqiang Xu"
       venue: "NeurIPS 2026"
@@ -173,6 +200,15 @@
 
 - year: 2024
   papers:
+    - title: "Identifying Differential Patient Care Through Inverse Intent Inference"
+      authors: "Hyewon Jeong, Siddharth Nayak, <strong>Taylor W. Killian</strong>, Sanjat Kanjilal"
+      venue: "arXiv pre-print"
+      description: "We use behavioral cloning, imitation learning, and inverse reinforcement learning to estimate counterfactual treatment policies for septic patient subgroups and identify disparities in care across clinical populations."
+      links:
+        - text: "Paper"
+          url: "https://arxiv.org/abs/2411.07372"
+      featured: false
+
     - title: "Clinically Motivated Sequential Decision Making Under Uncertainty in Offline Settings"
       authors: "<strong>Taylor W. Killian</strong>"
       venue: "PhD Thesis, University of Toronto, Department of Computer Science"
