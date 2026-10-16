@@ -1,5 +1,14 @@
 - year: 2026
   papers:
+    - title: "Recovering Reliable Supervision via Critique-Guided On-Policy Distillation"
+      authors: "Kaixiang Zhao, Tianrun Yu, Shangzhe Li, Yuxiao Yang, Amanda Hughes, Weitong Zhang, <strong>Taylor W. Killian</strong>"
+      venue: "arXiv pre-print"
+      description: "CriticOPD uses a teacher's critique of student errors to restore recoverability in on-policy distillation, improving reasoning performance across two Qwen3 students and six mathematical reasoning benchmarks."
+      links:
+        - text: "Paper"
+          url: "https://arxiv.org/abs/2610.20572"
+      featured: false
+
     - title: "REVO: Rollout-Efficient Off-Policy Distillation via Variance-Guided Reuse"
       authors: "Yuxiao Yang, Shangzhe Li, Tianrun Yu, Kaixiang Zhao, <strong>Taylor W. Killian</strong>, Weitong Zhang"
       venue: "arXiv pre-print"
